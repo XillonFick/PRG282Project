@@ -64,10 +64,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnRead.BackColor = System.Drawing.SystemColors.Info;
             this.btnRead.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnRead.Location = new System.Drawing.Point(245, 149);
+            this.btnRead.Location = new System.Drawing.Point(245, 158);
             this.btnRead.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRead.Name = "btnRead";
-            this.btnRead.Size = new System.Drawing.Size(132, 44);
+            this.btnRead.Size = new System.Drawing.Size(132, 48);
             this.btnRead.TabIndex = 7;
             this.btnRead.Text = "Read Info";
             this.btnRead.UseVisualStyleBackColor = false;
@@ -76,10 +76,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnDelete.BackColor = System.Drawing.SystemColors.Info;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnDelete.Location = new System.Drawing.Point(439, 149);
+            this.btnDelete.Location = new System.Drawing.Point(439, 158);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(94, 33);
+            this.btnDelete.Size = new System.Drawing.Size(94, 48);
             this.btnDelete.TabIndex = 9;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = false;
@@ -91,7 +91,7 @@ namespace PRG282_Assignment_GUI
             this.btnUpdate.Location = new System.Drawing.Point(439, 96);
             this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(94, 33);
+            this.btnUpdate.Size = new System.Drawing.Size(94, 49);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;

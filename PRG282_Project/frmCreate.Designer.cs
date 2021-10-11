@@ -53,9 +53,9 @@ namespace PRG282_Assignment_GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(296, 48);
+            this.label3.Location = new System.Drawing.Point(296, 38);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(192, 41);
             this.label3.TabIndex = 6;
@@ -64,8 +64,8 @@ namespace PRG282_Assignment_GUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(39, 162);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Location = new System.Drawing.Point(39, 130);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(141, 28);
             this.label2.TabIndex = 10;
@@ -73,17 +73,18 @@ namespace PRG282_Assignment_GUI
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(219, 166);
+            this.txtPassword.Location = new System.Drawing.Point(219, 133);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(125, 27);
+            this.txtPassword.Size = new System.Drawing.Size(125, 22);
             this.txtPassword.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(39, 114);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(39, 91);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 28);
             this.label1.TabIndex = 8;
@@ -92,16 +93,17 @@ namespace PRG282_Assignment_GUI
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(219, 118);
+            this.txtUsername.Location = new System.Drawing.Point(219, 94);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(125, 27);
+            this.txtUsername.Size = new System.Drawing.Size(125, 22);
             this.txtUsername.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(39, 256);
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label4.Location = new System.Drawing.Point(39, 205);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 28);
             this.label4.TabIndex = 14;
@@ -109,17 +111,18 @@ namespace PRG282_Assignment_GUI
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 260);
+            this.textBox1.Location = new System.Drawing.Point(219, 208);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(125, 27);
+            this.textBox1.Size = new System.Drawing.Size(125, 22);
             this.textBox1.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(39, 208);
+            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label5.Location = new System.Drawing.Point(39, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(166, 28);
             this.label5.TabIndex = 12;
@@ -127,16 +130,17 @@ namespace PRG282_Assignment_GUI
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(219, 212);
+            this.textBox2.Location = new System.Drawing.Point(219, 170);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 27);
+            this.textBox2.Size = new System.Drawing.Size(125, 22);
             this.textBox2.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(386, 256);
+            this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label6.Location = new System.Drawing.Point(386, 205);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(143, 28);
             this.label6.TabIndex = 22;
@@ -145,8 +149,8 @@ namespace PRG282_Assignment_GUI
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(386, 208);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label7.Location = new System.Drawing.Point(386, 166);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 28);
             this.label7.TabIndex = 20;
@@ -154,16 +158,17 @@ namespace PRG282_Assignment_GUI
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(566, 212);
+            this.textBox4.Location = new System.Drawing.Point(566, 170);
+            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 27);
+            this.textBox4.Size = new System.Drawing.Size(125, 22);
             this.textBox4.TabIndex = 19;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(386, 162);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label8.Location = new System.Drawing.Point(386, 130);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 28);
             this.label8.TabIndex = 18;
@@ -171,17 +176,18 @@ namespace PRG282_Assignment_GUI
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(566, 166);
+            this.textBox5.Location = new System.Drawing.Point(566, 133);
+            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox5.Name = "textBox5";
             this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(125, 27);
+            this.textBox5.Size = new System.Drawing.Size(125, 22);
             this.textBox5.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(386, 114);
+            this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label9.Location = new System.Drawing.Point(386, 91);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(85, 28);
             this.label9.TabIndex = 16;
@@ -190,10 +196,11 @@ namespace PRG282_Assignment_GUI
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(44, 354);
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnBack.Location = new System.Drawing.Point(44, 283);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 41);
+            this.btnBack.Size = new System.Drawing.Size(132, 42);
             this.btnBack.TabIndex = 23;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -201,10 +208,11 @@ namespace PRG282_Assignment_GUI
             // btnCreate
             // 
             this.btnCreate.BackColor = System.Drawing.SystemColors.Info;
-            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnCreate.Location = new System.Drawing.Point(269, 354);
+            this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnCreate.Location = new System.Drawing.Point(269, 283);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(132, 41);
+            this.btnCreate.Size = new System.Drawing.Size(132, 42);
             this.btnCreate.TabIndex = 24;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
@@ -215,15 +223,16 @@ namespace PRG282_Assignment_GUI
             this.comboBox1.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(566, 114);
+            this.comboBox1.Location = new System.Drawing.Point(566, 91);
+            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 28);
+            this.comboBox1.Size = new System.Drawing.Size(125, 24);
             this.comboBox1.TabIndex = 25;
             // 
             // checkedListBox1
             // 
             this.checkedListBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
             this.checkedListBox1.FormattingEnabled = true;
             this.checkedListBox1.Items.AddRange(new object[] {
             "Mathematics",
@@ -231,17 +240,18 @@ namespace PRG282_Assignment_GUI
             "Programming",
             "Database Design",
             "Network Design"});
-            this.checkedListBox1.Location = new System.Drawing.Point(566, 256);
+            this.checkedListBox1.Location = new System.Drawing.Point(566, 205);
+            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(181, 139);
+            this.checkedListBox1.Size = new System.Drawing.Size(181, 112);
             this.checkedListBox1.TabIndex = 26;
             // 
             // frmCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(943, 516);
+            this.ClientSize = new System.Drawing.Size(943, 413);
             this.Controls.Add(this.checkedListBox1);
             this.Controls.Add(this.comboBox1);
             this.Controls.Add(this.btnCreate);
@@ -261,6 +271,7 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCreate";
             this.Text = "frmCreate";
             this.ResumeLayout(false);

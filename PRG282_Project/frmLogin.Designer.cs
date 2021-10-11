@@ -40,16 +40,17 @@ namespace PRG282_Assignment_GUI
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(382, 159);
+            this.txtUsername.Location = new System.Drawing.Point(382, 127);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(125, 27);
+            this.txtUsername.Size = new System.Drawing.Size(125, 22);
             this.txtUsername.TabIndex = 0;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(266, 155);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(266, 124);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(103, 28);
             this.label1.TabIndex = 1;
@@ -58,8 +59,8 @@ namespace PRG282_Assignment_GUI
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(266, 203);
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Location = new System.Drawing.Point(266, 162);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(97, 28);
             this.label2.TabIndex = 3;
@@ -67,18 +68,19 @@ namespace PRG282_Assignment_GUI
             // 
             // txtPassword
             // 
-            this.txtPassword.Location = new System.Drawing.Point(382, 207);
+            this.txtPassword.Location = new System.Drawing.Point(382, 166);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(125, 27);
+            this.txtPassword.Size = new System.Drawing.Size(125, 22);
             this.txtPassword.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(352, 49);
+            this.label3.Location = new System.Drawing.Point(352, 39);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(97, 41);
             this.label3.TabIndex = 4;
@@ -87,10 +89,11 @@ namespace PRG282_Assignment_GUI
             // btnLogin
             // 
             this.btnLogin.BackColor = System.Drawing.SystemColors.Info;
-            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnLogin.Location = new System.Drawing.Point(269, 277);
+            this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnLogin.Location = new System.Drawing.Point(269, 222);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnLogin.Name = "btnLogin";
-            this.btnLogin.Size = new System.Drawing.Size(94, 41);
+            this.btnLogin.Size = new System.Drawing.Size(94, 43);
             this.btnLogin.TabIndex = 5;
             this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
@@ -98,21 +101,22 @@ namespace PRG282_Assignment_GUI
             // btnRegister
             // 
             this.btnRegister.BackColor = System.Drawing.SystemColors.Info;
-            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnRegister.Location = new System.Drawing.Point(413, 277);
+            this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnRegister.Location = new System.Drawing.Point(413, 222);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnRegister.Name = "btnRegister";
-            this.btnRegister.Size = new System.Drawing.Size(94, 41);
+            this.btnRegister.Size = new System.Drawing.Size(94, 43);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
             // 
             // frmLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 360);
             this.Controls.Add(this.btnRegister);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.label3);
@@ -120,6 +124,7 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmLogin";
             this.Text = "Login";
             this.ResumeLayout(false);

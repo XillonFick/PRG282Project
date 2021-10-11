@@ -43,9 +43,9 @@ namespace PRG282_Assignment_GUI
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(284, 31);
+            this.label3.Location = new System.Drawing.Point(284, 25);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(344, 41);
             this.label3.TabIndex = 8;
@@ -54,8 +54,8 @@ namespace PRG282_Assignment_GUI
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label7.Location = new System.Drawing.Point(305, 218);
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label7.Location = new System.Drawing.Point(305, 174);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 28);
             this.label7.TabIndex = 38;
@@ -63,16 +63,17 @@ namespace PRG282_Assignment_GUI
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(485, 222);
+            this.txtAddress.Location = new System.Drawing.Point(485, 178);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(125, 27);
+            this.txtAddress.Size = new System.Drawing.Size(125, 22);
             this.txtAddress.TabIndex = 37;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(305, 172);
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label8.Location = new System.Drawing.Point(305, 138);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(71, 28);
             this.label8.TabIndex = 36;
@@ -80,17 +81,18 @@ namespace PRG282_Assignment_GUI
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(485, 176);
+            this.txtPhone.Location = new System.Drawing.Point(485, 141);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '*';
-            this.txtPhone.Size = new System.Drawing.Size(125, 27);
+            this.txtPhone.Size = new System.Drawing.Size(125, 22);
             this.txtPhone.TabIndex = 35;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(305, 123);
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label1.Location = new System.Drawing.Point(305, 98);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(108, 28);
             this.label1.TabIndex = 27;
@@ -98,18 +100,20 @@ namespace PRG282_Assignment_GUI
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(485, 127);
+            this.txtID.Location = new System.Drawing.Point(485, 102);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(125, 27);
+            this.txtID.Size = new System.Drawing.Size(125, 22);
             this.txtID.TabIndex = 26;
             // 
             // btnUpdate
             // 
             this.btnUpdate.BackColor = System.Drawing.SystemColors.Info;
-            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnUpdate.Location = new System.Drawing.Point(496, 319);
+            this.btnUpdate.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnUpdate.Location = new System.Drawing.Point(496, 255);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnUpdate.Name = "btnUpdate";
-            this.btnUpdate.Size = new System.Drawing.Size(132, 41);
+            this.btnUpdate.Size = new System.Drawing.Size(132, 42);
             this.btnUpdate.TabIndex = 43;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = false;
@@ -117,20 +121,21 @@ namespace PRG282_Assignment_GUI
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
-            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBack.Location = new System.Drawing.Point(271, 319);
+            this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.btnBack.Location = new System.Drawing.Point(271, 255);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 41);
+            this.btnBack.Size = new System.Drawing.Size(132, 42);
             this.btnBack.TabIndex = 42;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
             // 
             // frmUpdate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(951, 511);
+            this.ClientSize = new System.Drawing.Size(951, 409);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label7);
@@ -140,6 +145,7 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmUpdate";
             this.Text = "frmUpdate";
             this.ResumeLayout(false);
