@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace PRG282_Assignment_GUI
 {
-    public partial class frmMain : Form
+    public partial class frmRead : Form
     {
-        public frmMain()
+        public frmRead()
         {
             InitializeComponent();
+        }
+
+        private void txtUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

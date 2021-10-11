@@ -8,11 +8,16 @@ using System.Windows.Forms;
 
 namespace PRG282_Assignment_GUI
 {
-    public partial class frmMain : Form
+    public partial class frmCreate : Form
     {
-        public frmMain()
+        public frmCreate()
         {
             InitializeComponent();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

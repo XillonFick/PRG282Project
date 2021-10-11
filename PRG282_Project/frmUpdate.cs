@@ -8,9 +8,9 @@ using System.Windows.Forms;
 
 namespace PRG282_Assignment_GUI
 {
-    public partial class frmMain : Form
+    public partial class frmUpdate : Form
     {
-        public frmMain()
+        public frmUpdate()
         {
             InitializeComponent();
         }
