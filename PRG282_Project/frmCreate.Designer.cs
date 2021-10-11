@@ -31,23 +31,23 @@ namespace PRG282_Assignment_GUI
         {
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txtPassword = new System.Windows.Forms.TextBox();
+            this.txtName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.txtUsername = new System.Windows.Forms.TextBox();
+            this.txtID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtDoB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtSurname = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtPhone = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.btnBack = new System.Windows.Forms.Button();
             this.btnCreate = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.checkedListBox1 = new System.Windows.Forms.CheckedListBox();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.clbModules = new System.Windows.Forms.CheckedListBox();
             this.SuspendLayout();
             // 
             // label3
@@ -71,14 +71,14 @@ namespace PRG282_Assignment_GUI
             this.label2.TabIndex = 10;
             this.label2.Text = "Student Name:";
             // 
-            // txtPassword
+            // txtName
             // 
-            this.txtPassword.Location = new System.Drawing.Point(219, 133);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '*';
-            this.txtPassword.Size = new System.Drawing.Size(125, 22);
-            this.txtPassword.TabIndex = 9;
+            this.txtName.Location = new System.Drawing.Point(219, 133);
+            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtName.Name = "txtName";
+            this.txtName.PasswordChar = '*';
+            this.txtName.Size = new System.Drawing.Size(125, 22);
+            this.txtName.TabIndex = 9;
             // 
             // label1
             // 
@@ -91,13 +91,13 @@ namespace PRG282_Assignment_GUI
             this.label1.Text = "Student ID:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // txtUsername
+            // txtID
             // 
-            this.txtUsername.Location = new System.Drawing.Point(219, 94);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(125, 22);
-            this.txtUsername.TabIndex = 7;
+            this.txtID.Location = new System.Drawing.Point(219, 94);
+            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Name = "txtID";
+            this.txtID.Size = new System.Drawing.Size(125, 22);
+            this.txtID.TabIndex = 7;
             // 
             // label4
             // 
@@ -109,14 +109,14 @@ namespace PRG282_Assignment_GUI
             this.label4.TabIndex = 14;
             this.label4.Text = "Date of Birth:";
             // 
-            // textBox1
+            // txtDoB
             // 
-            this.textBox1.Location = new System.Drawing.Point(219, 208);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.PasswordChar = '*';
-            this.textBox1.Size = new System.Drawing.Size(125, 22);
-            this.textBox1.TabIndex = 13;
+            this.txtDoB.Location = new System.Drawing.Point(219, 208);
+            this.txtDoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDoB.Name = "txtDoB";
+            this.txtDoB.PasswordChar = '*';
+            this.txtDoB.Size = new System.Drawing.Size(125, 22);
+            this.txtDoB.TabIndex = 13;
             // 
             // label5
             // 
@@ -128,13 +128,13 @@ namespace PRG282_Assignment_GUI
             this.label5.TabIndex = 12;
             this.label5.Text = "Student Surname:";
             // 
-            // textBox2
+            // txtSurname
             // 
-            this.textBox2.Location = new System.Drawing.Point(219, 170);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(125, 22);
-            this.textBox2.TabIndex = 11;
+            this.txtSurname.Location = new System.Drawing.Point(219, 170);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSurname.Name = "txtSurname";
+            this.txtSurname.Size = new System.Drawing.Size(125, 22);
+            this.txtSurname.TabIndex = 11;
             // 
             // label6
             // 
@@ -156,13 +156,13 @@ namespace PRG282_Assignment_GUI
             this.label7.TabIndex = 20;
             this.label7.Text = "Address: ";
             // 
-            // textBox4
+            // txtAddress
             // 
-            this.textBox4.Location = new System.Drawing.Point(566, 170);
-            this.textBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(125, 22);
-            this.textBox4.TabIndex = 19;
+            this.txtAddress.Location = new System.Drawing.Point(566, 170);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(125, 22);
+            this.txtAddress.TabIndex = 19;
             // 
             // label8
             // 
@@ -174,14 +174,14 @@ namespace PRG282_Assignment_GUI
             this.label8.TabIndex = 18;
             this.label8.Text = "Phone:";
             // 
-            // textBox5
+            // txtPhone
             // 
-            this.textBox5.Location = new System.Drawing.Point(566, 133);
-            this.textBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.PasswordChar = '*';
-            this.textBox5.Size = new System.Drawing.Size(125, 22);
-            this.textBox5.TabIndex = 17;
+            this.txtPhone.Location = new System.Drawing.Point(566, 133);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhone.Name = "txtPhone";
+            this.txtPhone.PasswordChar = '*';
+            this.txtPhone.Size = new System.Drawing.Size(125, 22);
+            this.txtPhone.TabIndex = 17;
             // 
             // label9
             // 
@@ -217,34 +217,34 @@ namespace PRG282_Assignment_GUI
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
             // 
-            // comboBox1
+            // cmbGender
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.comboBox1.Location = new System.Drawing.Point(566, 91);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(125, 24);
-            this.comboBox1.TabIndex = 25;
+            this.cmbGender.Location = new System.Drawing.Point(566, 91);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(125, 24);
+            this.cmbGender.TabIndex = 25;
             // 
-            // checkedListBox1
+            // clbModules
             // 
-            this.checkedListBox1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.checkedListBox1.Font = new System.Drawing.Font("Segoe UI", 11F);
-            this.checkedListBox1.FormattingEnabled = true;
-            this.checkedListBox1.Items.AddRange(new object[] {
+            this.clbModules.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.clbModules.Font = new System.Drawing.Font("Segoe UI", 11F);
+            this.clbModules.FormattingEnabled = true;
+            this.clbModules.Items.AddRange(new object[] {
             "Mathematics",
             "Statistics",
             "Programming",
             "Database Design",
             "Network Design"});
-            this.checkedListBox1.Location = new System.Drawing.Point(566, 205);
-            this.checkedListBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.checkedListBox1.Name = "checkedListBox1";
-            this.checkedListBox1.Size = new System.Drawing.Size(181, 112);
-            this.checkedListBox1.TabIndex = 26;
+            this.clbModules.Location = new System.Drawing.Point(566, 205);
+            this.clbModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.clbModules.Name = "clbModules";
+            this.clbModules.Size = new System.Drawing.Size(181, 112);
+            this.clbModules.TabIndex = 26;
             // 
             // frmCreate
             // 
@@ -252,24 +252,24 @@ namespace PRG282_Assignment_GUI
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(943, 413);
-            this.Controls.Add(this.checkedListBox1);
-            this.Controls.Add(this.comboBox1);
+            this.Controls.Add(this.clbModules);
+            this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.btnCreate);
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.textBox5);
+            this.Controls.Add(this.txtPhone);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label4);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtDoB);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtPassword);
+            this.Controls.Add(this.txtName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtUsername);
+            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "frmCreate";
@@ -283,22 +283,22 @@ namespace PRG282_Assignment_GUI
 
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtPassword;
+        private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtUsername;
+        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtDoB;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txtSurname;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnBack;
         private System.Windows.Forms.Button btnCreate;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.CheckedListBox checkedListBox1;
+        private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.CheckedListBox clbModules;
     }
 }
