@@ -1,8 +1,10 @@
-﻿using System;
+﻿using PRG282_Assignment_GUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace PRG282_Project
 {
@@ -16,7 +18,9 @@ namespace PRG282_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Login());
+            Application.Run(new frmLogin());
+
+            
         }
     }
 }
