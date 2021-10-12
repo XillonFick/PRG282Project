@@ -14,5 +14,46 @@ namespace PRG282_Assignment_GUI
         {
             InitializeComponent();
         }
+
+        private void btnRead_Click(object sender, EventArgs e)
+        {
+            frmRead read = new frmRead();
+
+            read.Show();
+            this.Hide();
+
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            frmDelete del = new frmDelete();
+
+            del.Show();
+            this.Hide();
+        }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+            frmUpdate upd = new frmUpdate();
+
+            upd.Show();
+            this.Hide();
+
+        }
+
+        private void btnCreate_Click(object sender, EventArgs e)
+        {
+            frmCreate cre = new frmCreate();
+
+            cre.Show();
+            this.Hide();
+        }
+
+        private void btnLogOut_Click(object sender, EventArgs e)
+        {
+            frmLogin log = new frmLogin();
+            this.Close();
+            log.Show();
+        }
     }
 }

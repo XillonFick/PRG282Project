@@ -55,9 +55,10 @@ namespace PRG282_Assignment_GUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(296, 38);
+            this.label3.Location = new System.Drawing.Point(222, 31);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(192, 41);
+            this.label3.Size = new System.Drawing.Size(156, 32);
             this.label3.TabIndex = 6;
             this.label3.Text = "Create Entry";
             // 
@@ -65,84 +66,89 @@ namespace PRG282_Assignment_GUI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label2.Location = new System.Drawing.Point(39, 130);
+            this.label2.Location = new System.Drawing.Point(29, 106);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(141, 28);
+            this.label2.Size = new System.Drawing.Size(112, 21);
             this.label2.TabIndex = 10;
             this.label2.Text = "Student Name:";
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(219, 133);
-            this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtName.Location = new System.Drawing.Point(164, 108);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '*';
-            this.txtName.Size = new System.Drawing.Size(125, 22);
+            this.txtName.Size = new System.Drawing.Size(95, 20);
             this.txtName.TabIndex = 9;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.Location = new System.Drawing.Point(39, 91);
+            this.label1.Location = new System.Drawing.Point(29, 74);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 28);
+            this.label1.Size = new System.Drawing.Size(85, 21);
             this.label1.TabIndex = 8;
             this.label1.Text = "Student ID:";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // txtID
             // 
-            this.txtID.Location = new System.Drawing.Point(219, 94);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtID.Location = new System.Drawing.Point(164, 76);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(125, 22);
+            this.txtID.Size = new System.Drawing.Size(95, 20);
             this.txtID.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label4.Location = new System.Drawing.Point(39, 205);
+            this.label4.Location = new System.Drawing.Point(29, 167);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 28);
+            this.label4.Size = new System.Drawing.Size(100, 21);
             this.label4.TabIndex = 14;
             this.label4.Text = "Date of Birth:";
             // 
             // txtDoB
             // 
-            this.txtDoB.Location = new System.Drawing.Point(219, 208);
-            this.txtDoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtDoB.Location = new System.Drawing.Point(164, 169);
+            this.txtDoB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtDoB.Name = "txtDoB";
             this.txtDoB.PasswordChar = '*';
-            this.txtDoB.Size = new System.Drawing.Size(125, 22);
+            this.txtDoB.Size = new System.Drawing.Size(95, 20);
             this.txtDoB.TabIndex = 13;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label5.Location = new System.Drawing.Point(39, 166);
+            this.label5.Location = new System.Drawing.Point(29, 135);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(166, 28);
+            this.label5.Size = new System.Drawing.Size(133, 21);
             this.label5.TabIndex = 12;
             this.label5.Text = "Student Surname:";
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(219, 170);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtSurname.Location = new System.Drawing.Point(164, 138);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtSurname.Name = "txtSurname";
-            this.txtSurname.Size = new System.Drawing.Size(125, 22);
+            this.txtSurname.Size = new System.Drawing.Size(95, 20);
             this.txtSurname.TabIndex = 11;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label6.Location = new System.Drawing.Point(386, 205);
+            this.label6.Location = new System.Drawing.Point(290, 167);
+            this.label6.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(143, 28);
+            this.label6.Size = new System.Drawing.Size(113, 21);
             this.label6.TabIndex = 22;
             this.label6.Text = "Module Codes:";
             // 
@@ -150,46 +156,49 @@ namespace PRG282_Assignment_GUI
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label7.Location = new System.Drawing.Point(386, 166);
+            this.label7.Location = new System.Drawing.Point(290, 135);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(91, 28);
+            this.label7.Size = new System.Drawing.Size(73, 21);
             this.label7.TabIndex = 20;
             this.label7.Text = "Address: ";
             // 
             // txtAddress
             // 
-            this.txtAddress.Location = new System.Drawing.Point(566, 170);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtAddress.Location = new System.Drawing.Point(424, 138);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtAddress.Name = "txtAddress";
-            this.txtAddress.Size = new System.Drawing.Size(125, 22);
+            this.txtAddress.Size = new System.Drawing.Size(95, 20);
             this.txtAddress.TabIndex = 19;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label8.Location = new System.Drawing.Point(386, 130);
+            this.label8.Location = new System.Drawing.Point(290, 106);
+            this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 28);
+            this.label8.Size = new System.Drawing.Size(57, 21);
             this.label8.TabIndex = 18;
             this.label8.Text = "Phone:";
             // 
             // txtPhone
             // 
-            this.txtPhone.Location = new System.Drawing.Point(566, 133);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhone.Location = new System.Drawing.Point(424, 108);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '*';
-            this.txtPhone.Size = new System.Drawing.Size(125, 22);
+            this.txtPhone.Size = new System.Drawing.Size(95, 20);
             this.txtPhone.TabIndex = 17;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label9.Location = new System.Drawing.Point(386, 91);
+            this.label9.Location = new System.Drawing.Point(290, 74);
+            this.label9.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(85, 28);
+            this.label9.Size = new System.Drawing.Size(68, 21);
             this.label9.TabIndex = 16;
             this.label9.Text = "Gender: ";
             // 
@@ -197,10 +206,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnBack.Location = new System.Drawing.Point(44, 283);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Location = new System.Drawing.Point(33, 230);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 42);
+            this.btnBack.Size = new System.Drawing.Size(99, 34);
             this.btnBack.TabIndex = 23;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -209,10 +218,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnCreate.BackColor = System.Drawing.SystemColors.Info;
             this.btnCreate.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnCreate.Location = new System.Drawing.Point(269, 283);
-            this.btnCreate.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCreate.Location = new System.Drawing.Point(202, 230);
+            this.btnCreate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnCreate.Name = "btnCreate";
-            this.btnCreate.Size = new System.Drawing.Size(132, 42);
+            this.btnCreate.Size = new System.Drawing.Size(99, 34);
             this.btnCreate.TabIndex = 24;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
@@ -223,10 +232,10 @@ namespace PRG282_Assignment_GUI
             this.cmbGender.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.cmbGender.Location = new System.Drawing.Point(566, 91);
-            this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.cmbGender.Location = new System.Drawing.Point(424, 74);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cmbGender.Name = "cmbGender";
-            this.cmbGender.Size = new System.Drawing.Size(125, 24);
+            this.cmbGender.Size = new System.Drawing.Size(95, 21);
             this.cmbGender.TabIndex = 25;
             // 
             // clbModules
@@ -240,18 +249,18 @@ namespace PRG282_Assignment_GUI
             "Programming",
             "Database Design",
             "Network Design"});
-            this.clbModules.Location = new System.Drawing.Point(566, 205);
-            this.clbModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.clbModules.Location = new System.Drawing.Point(424, 167);
+            this.clbModules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.clbModules.Name = "clbModules";
-            this.clbModules.Size = new System.Drawing.Size(181, 112);
+            this.clbModules.Size = new System.Drawing.Size(137, 92);
             this.clbModules.TabIndex = 26;
             // 
             // frmCreate
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(943, 413);
+            this.ClientSize = new System.Drawing.Size(707, 336);
             this.Controls.Add(this.clbModules);
             this.Controls.Add(this.cmbGender);
             this.Controls.Add(this.btnCreate);
@@ -271,9 +280,10 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmCreate";
             this.Text = "frmCreate";
+            this.Load += new System.EventHandler(this.frmCreate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
