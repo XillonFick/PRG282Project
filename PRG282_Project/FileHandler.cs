@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Windows.Forms;
 
 
 namespace PRG282_Project
@@ -21,8 +22,25 @@ namespace PRG282_Project
                 returnList.Add(new LoginDetails(items[0],items[1]));
             }
             return returnList;
-           
+          
+        }
 
+        public bool Register(string user, string password)
+        {
+            try
+            {
+                string addedUser = String.Format("{0},{1}",user,password);
+                List<string> written = new List<string>();
+                
+                written.Add(addedUser);
+
+                File.AppendAllLines("Login.txt",written);
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
     }
 }

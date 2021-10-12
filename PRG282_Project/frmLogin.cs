@@ -58,5 +58,11 @@ namespace PRG282_Assignment_GUI
             }
            
         }
+
+        private void btnRegister_Click(object sender, EventArgs e)
+        {
+            frmRegister reg = new frmRegister();
+            reg.Show();
+        }
     }
 }
