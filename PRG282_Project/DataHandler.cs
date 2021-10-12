@@ -79,6 +79,7 @@ namespace PRG282_Project
                 {
                     MessageBox.Show("Valid User Name input required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return false;
+
                 }
                 catch (Exception er)
                 {
