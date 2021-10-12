@@ -185,7 +185,7 @@ namespace PRG282_Project
                 SqlCommand cmd = new SqlCommand("", connect);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("", studID);
+                cmd.Parameters.AddWithValue("@ID", studID);
                 cmd.ExecuteNonQuery();
             }
         }
