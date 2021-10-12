@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PRG282_Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,7 @@ namespace PRG282_Assignment_GUI
 {
     public partial class frmRead : Form
     {
+        DataHandler handler = new DataHandler();
         public frmRead()
         {
             InitializeComponent();
@@ -18,6 +20,11 @@ namespace PRG282_Assignment_GUI
         private void txtUsername_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmRead_Load(object sender, EventArgs e)
+        {
+            sql
         }
     }
 }

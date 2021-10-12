@@ -23,7 +23,7 @@ namespace PRG282_Assignment_GUI
 
         private void frmLogin_Load(object sender, EventArgs e)
         {
-
+            handler.Connect();
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

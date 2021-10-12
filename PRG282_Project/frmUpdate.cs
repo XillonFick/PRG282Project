@@ -14,5 +14,10 @@ namespace PRG282_Assignment_GUI
         {
             InitializeComponent();
         }
+
+        private void btnUpdate_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

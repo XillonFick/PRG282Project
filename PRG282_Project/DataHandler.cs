@@ -29,7 +29,7 @@ namespace PRG282_Project
         {
             if (pass != "")
             {
-                //if password is passed then it is assumed that the usser is registered and checks
+                //if password is passed then it is assumed that the user is registered and checks
                 //valid login details
                 try
                 {
@@ -88,28 +88,106 @@ namespace PRG282_Project
                     return false;
                 }
             }
-           
+
 
         }
+        public DataTable Read()
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("",connect);
 
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+
+        }
         public void CreateNew(string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
         {
             using (connect)
             {
-                SqlCommand cmd = new SqlCommand("",connect);
+                SqlCommand cmd = new SqlCommand("", connect);
                 cmd.CommandType = CommandType.StoredProcedure;
                 //Subject to change based on how db has been set up
                 //modules would liekley have to be passed as a Table and inserted into the modules table by the Stored Proc
                 cmd.Parameters.AddWithValue("", name);
-                cmd.Parameters.AddWithValue("",surname);
-                cmd.Parameters.AddWithValue("",course);
-                cmd.Parameters.AddWithValue("",doB);
-                cmd.Parameters.AddWithValue("",gender);
-                cmd.Parameters.AddWithValue("",phoneNumber);
-                cmd.Parameters.AddWithValue("",address);
-                cmd.Parameters.AddWithValue("",modulecodes);
+                cmd.Parameters.AddWithValue("", surname);
+                cmd.Parameters.AddWithValue("", course);
+                cmd.Parameters.AddWithValue("", doB);
+                cmd.Parameters.AddWithValue("", gender);
+                cmd.Parameters.AddWithValue("", phoneNumber);
+                cmd.Parameters.AddWithValue("", address);
+                cmd.Parameters.AddWithValue("", modulecodes);
             }
 
+        }
+
+        public void Update(int studID, string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address)
+        {
+            string iName = "StudentName= StudentName";
+            string iSurname = "StudentSurname= StudentSurname";
+            string iCourse = "Course = Course ";
+            string iDOB = "DOB = DOB";
+            string iGender = "Gender = Gender";
+            string iPhone = "Phone = Phone";
+            string iAdress = "Adress = Adress";
+
+
+            if (string.IsNullOrEmpty(name) == false)
+            {
+                iName = string.Format("StudentName= {0}", name);
+            }
+            if (string.IsNullOrEmpty(surname) == false)
+            {
+                iSurname = string.Format("StudentSurname= {0}", name);
+            }
+            if (string.IsNullOrEmpty(doB.ToString()) == false)
+            {
+                iCourse = string.Format("Course = {0}", course);
+            }
+            if (string.IsNullOrEmpty(doB.ToString()) == false)
+            {
+                iDOB = string.Format("DOB = {0}", doB.ToString()) ;
+            }
+            if (string.IsNullOrEmpty(gender.ToString()) == false)
+            {
+                iGender = string.Format("Gender = {0}", gender.ToString());
+            }
+            if (string.IsNullOrEmpty(phoneNumber) == false)
+            {
+                iPhone = string.Format("Phone = {0}", phoneNumber);
+            }
+            if (string.IsNullOrEmpty(address) == false)
+            {
+                iAdress = string.Format("Adress = {0}", address);
+            }
+
+
+            using (connect)
+            {
+                SqlCommand cmd = new SqlCommand();
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("", studID);
+                cmd.Parameters.AddWithValue("", iName);
+                cmd.Parameters.AddWithValue("", iSurname);
+                cmd.Parameters.AddWithValue("", iCourse);
+                cmd.Parameters.AddWithValue("", iDOB);
+                cmd.Parameters.AddWithValue("", iGender);
+                cmd.Parameters.AddWithValue("", iPhone);
+                cmd.Parameters.AddWithValue("", iAdress);
+
+                cmd.ExecuteNonQuery();
+            }
+        }
+
+        public void DeleteStudent(int studID)
+        {
+            using (connect)
+            {
+                SqlCommand cmd = new SqlCommand("", connect);
+                cmd.CommandType = CommandType.StoredProcedure;
+
+                cmd.Parameters.AddWithValue("", studID);
+                cmd.ExecuteNonQuery();
+            }
         }
     }
 }

@@ -47,31 +47,32 @@ namespace PRG282_Assignment_GUI
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Bold);
             this.label3.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.label3.Location = new System.Drawing.Point(300, 23);
+            this.label3.Location = new System.Drawing.Point(225, 19);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(162, 41);
+            this.label3.Size = new System.Drawing.Size(131, 32);
             this.label3.TabIndex = 7;
             this.label3.Text = "Read Data";
             // 
             // dgvDisplay
             // 
             this.dgvDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDisplay.Location = new System.Drawing.Point(97, 78);
-            this.dgvDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.dgvDisplay.Location = new System.Drawing.Point(73, 63);
+            this.dgvDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDisplay.Name = "dgvDisplay";
             this.dgvDisplay.RowHeadersWidth = 51;
             this.dgvDisplay.RowTemplate.Height = 29;
-            this.dgvDisplay.Size = new System.Drawing.Size(589, 150);
+            this.dgvDisplay.Size = new System.Drawing.Size(442, 122);
             this.dgvDisplay.TabIndex = 8;
             // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnBack.Location = new System.Drawing.Point(97, 310);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBack.Location = new System.Drawing.Point(73, 252);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBack.Name = "btnBack";
-            this.btnBack.Size = new System.Drawing.Size(132, 39);
+            this.btnBack.Size = new System.Drawing.Size(99, 32);
             this.btnBack.TabIndex = 24;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
@@ -80,10 +81,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnFirst.BackColor = System.Drawing.SystemColors.Info;
             this.btnFirst.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnFirst.Location = new System.Drawing.Point(97, 246);
-            this.btnFirst.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnFirst.Location = new System.Drawing.Point(73, 200);
+            this.btnFirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFirst.Name = "btnFirst";
-            this.btnFirst.Size = new System.Drawing.Size(132, 41);
+            this.btnFirst.Size = new System.Drawing.Size(99, 33);
             this.btnFirst.TabIndex = 25;
             this.btnFirst.Text = "<<";
             this.btnFirst.UseVisualStyleBackColor = false;
@@ -92,10 +93,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnPrevious.BackColor = System.Drawing.SystemColors.Info;
             this.btnPrevious.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnPrevious.Location = new System.Drawing.Point(252, 246);
-            this.btnPrevious.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnPrevious.Location = new System.Drawing.Point(189, 200);
+            this.btnPrevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrevious.Name = "btnPrevious";
-            this.btnPrevious.Size = new System.Drawing.Size(132, 41);
+            this.btnPrevious.Size = new System.Drawing.Size(99, 33);
             this.btnPrevious.TabIndex = 26;
             this.btnPrevious.Text = "<";
             this.btnPrevious.UseVisualStyleBackColor = false;
@@ -104,10 +105,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnLast.BackColor = System.Drawing.SystemColors.Info;
             this.btnLast.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnLast.Location = new System.Drawing.Point(554, 246);
-            this.btnLast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLast.Location = new System.Drawing.Point(416, 200);
+            this.btnLast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLast.Name = "btnLast";
-            this.btnLast.Size = new System.Drawing.Size(132, 41);
+            this.btnLast.Size = new System.Drawing.Size(99, 33);
             this.btnLast.TabIndex = 28;
             this.btnLast.Text = ">>";
             this.btnLast.UseVisualStyleBackColor = false;
@@ -116,10 +117,10 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.Info;
             this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnNext.Location = new System.Drawing.Point(399, 246);
-            this.btnNext.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnNext.Location = new System.Drawing.Point(299, 200);
+            this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
-            this.btnNext.Size = new System.Drawing.Size(132, 41);
+            this.btnNext.Size = new System.Drawing.Size(99, 33);
             this.btnNext.TabIndex = 27;
             this.btnNext.Text = ">";
             this.btnNext.UseVisualStyleBackColor = false;
@@ -128,18 +129,19 @@ namespace PRG282_Assignment_GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.Location = new System.Drawing.Point(276, 321);
+            this.label1.Location = new System.Drawing.Point(207, 261);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(108, 28);
+            this.label1.Size = new System.Drawing.Size(85, 21);
             this.label1.TabIndex = 30;
             this.label1.Text = "Student ID:";
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(399, 322);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtUsername.Location = new System.Drawing.Point(299, 262);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
-            this.txtUsername.Size = new System.Drawing.Size(132, 22);
+            this.txtUsername.Size = new System.Drawing.Size(100, 20);
             this.txtUsername.TabIndex = 29;
             this.txtUsername.TextChanged += new System.EventHandler(this.txtUsername_TextChanged);
             // 
@@ -147,20 +149,20 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.Info;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSearch.Location = new System.Drawing.Point(554, 311);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnSearch.Location = new System.Drawing.Point(416, 253);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
-            this.btnSearch.Size = new System.Drawing.Size(132, 38);
+            this.btnSearch.Size = new System.Drawing.Size(99, 31);
             this.btnSearch.TabIndex = 31;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
             // frmRead
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(800, 402);
+            this.ClientSize = new System.Drawing.Size(600, 327);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
@@ -171,9 +173,10 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.btnBack);
             this.Controls.Add(this.dgvDisplay);
             this.Controls.Add(this.label3);
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "frmRead";
             this.Text = "frmRead";
+            this.Load += new System.EventHandler(this.frmRead_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplay)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
