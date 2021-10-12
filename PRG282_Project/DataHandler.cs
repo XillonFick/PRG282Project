@@ -76,5 +76,10 @@ namespace PRG282_Project
            
 
         }
+
+        public void CreateNew()
+        {
+
+        }
     }
 }

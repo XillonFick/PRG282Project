@@ -19,5 +19,10 @@ namespace PRG282_Assignment_GUI
         {
 
         }
+
+        private void frmCreate_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
