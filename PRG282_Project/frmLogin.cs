@@ -17,5 +17,11 @@ namespace PRG282_Assignment_GUI
             InitializeComponent();
         }
 
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            frmMain main1 = new frmMain();
+            this.Hide();
+            main1.Show();
+        }
     }
 }
