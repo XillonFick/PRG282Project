@@ -15,33 +15,65 @@ namespace PRG282_Project
 
         FileHandler filer = new FileHandler();
 
-        public bool ValidateLogin(string name, string pass)
+        public bool ValidateLogin(string name, string pass = "")
         {
-            try
+            if (pass != "")
             {
-                List<LoginDetails> logdetails = filer.GetLogin();
-
-                foreach (LoginDetails item in logdetails)
+                try
                 {
-                    if (name == item.UserName && pass == item.Password)
+                    List<LoginDetails> logdetails = filer.GetLogin();
+
+                    foreach (LoginDetails item in logdetails)
                     {
-                        return true;
+                        if (name == item.UserName && pass == item.Password)
+                        {
+                            return true;
+                        }
                     }
+                    return false;
+
                 }
-                return false;
+                catch (FormatException)
+                {
+                    MessageBox.Show("Valid input required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                catch (Exception er)
+                {
 
+                    MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
-            catch(FormatException)
+            else
             {
-                MessageBox.Show("Valid input required","Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
-                return false;
-            }
-            catch (Exception er)
-            {
+                try
+                {
+                    List<LoginDetails> logdetails = filer.GetLogin();
 
-                MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
+                    foreach (LoginDetails item in logdetails)
+                    {
+                        if (name == item.UserName)
+                        {
+                            return true;
+                        }
+                    }
+                    return false;
+
+                }
+                catch (FormatException)
+                {
+                    MessageBox.Show("Valid User Name input required", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
+                catch (Exception er)
+                {
+
+                    MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return false;
+                }
             }
+           
 
         }
     }

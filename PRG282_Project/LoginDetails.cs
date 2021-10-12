@@ -21,5 +21,10 @@ namespace PRG282_Project
 
         public string UserName { get => userName; set => userName = value; }
         public string Password { get => password; set => password = value; }
+
+        public override string ToString()
+        {
+            return String.Format("{0},{1}",this.UserName,this.Password);
+        }
     }
 }

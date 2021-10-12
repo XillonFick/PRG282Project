@@ -41,7 +41,7 @@ namespace PRG282_Assignment_GUI
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(286, 103);
-            this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtUsername.Margin = new System.Windows.Forms.Padding(2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(95, 20);
             this.txtUsername.TabIndex = 0;
@@ -71,7 +71,7 @@ namespace PRG282_Assignment_GUI
             // txtPassword
             // 
             this.txtPassword.Location = new System.Drawing.Point(286, 135);
-            this.txtPassword.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(2);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(95, 20);
@@ -95,7 +95,7 @@ namespace PRG282_Assignment_GUI
             this.btnLogin.BackColor = System.Drawing.SystemColors.Info;
             this.btnLogin.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnLogin.Location = new System.Drawing.Point(202, 180);
-            this.btnLogin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(77, 35);
             this.btnLogin.TabIndex = 5;
@@ -108,12 +108,13 @@ namespace PRG282_Assignment_GUI
             this.btnRegister.BackColor = System.Drawing.SystemColors.Info;
             this.btnRegister.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.btnRegister.Location = new System.Drawing.Point(310, 180);
-            this.btnRegister.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRegister.Margin = new System.Windows.Forms.Padding(2);
             this.btnRegister.Name = "btnRegister";
             this.btnRegister.Size = new System.Drawing.Size(81, 35);
             this.btnRegister.TabIndex = 6;
             this.btnRegister.Text = "Register";
             this.btnRegister.UseVisualStyleBackColor = false;
+            this.btnRegister.Click += new System.EventHandler(this.btnRegister_Click);
             // 
             // frmLogin
             // 
@@ -129,7 +130,7 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.txtPassword);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmLogin";
             this.Text = "Login";
             this.Load += new System.EventHandler(this.frmLogin_Load);

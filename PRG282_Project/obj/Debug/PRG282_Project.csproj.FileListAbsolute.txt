@@ -13,3 +13,4 @@ C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Proj
 C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\bin\Debug\PRG282_Project.pdb
 C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\obj\Debug\PRG282_Project.exe
 C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\obj\Debug\PRG282_Project.pdb
+C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\obj\Debug\PRG282_Project.frmRegister.resources
