@@ -39,7 +39,10 @@ namespace PRG282_Assignment_GUI
             this.label1 = new System.Windows.Forms.Label();
             this.txtUsername = new System.Windows.Forms.TextBox();
             this.btnSearch = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplay)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // label3
@@ -57,7 +60,7 @@ namespace PRG282_Assignment_GUI
             // dgvDisplay
             // 
             this.dgvDisplay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDisplay.Location = new System.Drawing.Point(73, 63);
+            this.dgvDisplay.Location = new System.Drawing.Point(73, 53);
             this.dgvDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dgvDisplay.Name = "dgvDisplay";
             this.dgvDisplay.RowHeadersWidth = 51;
@@ -69,7 +72,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
             this.btnBack.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnBack.Location = new System.Drawing.Point(73, 252);
+            this.btnBack.Location = new System.Drawing.Point(73, 399);
             this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(99, 32);
@@ -81,7 +84,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnFirst.BackColor = System.Drawing.SystemColors.Info;
             this.btnFirst.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnFirst.Location = new System.Drawing.Point(73, 200);
+            this.btnFirst.Location = new System.Drawing.Point(73, 347);
             this.btnFirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnFirst.Name = "btnFirst";
             this.btnFirst.Size = new System.Drawing.Size(99, 33);
@@ -93,7 +96,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnPrevious.BackColor = System.Drawing.SystemColors.Info;
             this.btnPrevious.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnPrevious.Location = new System.Drawing.Point(189, 200);
+            this.btnPrevious.Location = new System.Drawing.Point(189, 347);
             this.btnPrevious.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(99, 33);
@@ -105,7 +108,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnLast.BackColor = System.Drawing.SystemColors.Info;
             this.btnLast.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnLast.Location = new System.Drawing.Point(416, 200);
+            this.btnLast.Location = new System.Drawing.Point(416, 347);
             this.btnLast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnLast.Name = "btnLast";
             this.btnLast.Size = new System.Drawing.Size(99, 33);
@@ -117,7 +120,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnNext.BackColor = System.Drawing.SystemColors.Info;
             this.btnNext.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnNext.Location = new System.Drawing.Point(299, 200);
+            this.btnNext.Location = new System.Drawing.Point(299, 347);
             this.btnNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(99, 33);
@@ -129,7 +132,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.label1.Location = new System.Drawing.Point(207, 261);
+            this.label1.Location = new System.Drawing.Point(207, 408);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(85, 21);
@@ -138,7 +141,7 @@ namespace PRG282_Assignment_GUI
             // 
             // txtUsername
             // 
-            this.txtUsername.Location = new System.Drawing.Point(299, 262);
+            this.txtUsername.Location = new System.Drawing.Point(299, 409);
             this.txtUsername.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(100, 20);
@@ -149,7 +152,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.btnSearch.BackColor = System.Drawing.SystemColors.Info;
             this.btnSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.btnSearch.Location = new System.Drawing.Point(416, 253);
+            this.btnSearch.Location = new System.Drawing.Point(416, 400);
             this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(99, 31);
@@ -157,12 +160,36 @@ namespace PRG282_Assignment_GUI
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
             // 
+            // dataGridView1
+            // 
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(73, 208);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 51;
+            this.dataGridView1.RowTemplate.Height = 29;
+            this.dataGridView1.Size = new System.Drawing.Size(442, 122);
+            this.dataGridView1.TabIndex = 32;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.label2.Location = new System.Drawing.Point(69, 185);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(127, 21);
+            this.label2.TabIndex = 33;
+            this.label2.Text = "Student Modules";
+            // 
             // frmRead
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(600, 327);
+            this.ClientSize = new System.Drawing.Size(600, 482);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtUsername);
@@ -178,6 +205,7 @@ namespace PRG282_Assignment_GUI
             this.Text = "frmRead";
             this.Load += new System.EventHandler(this.frmRead_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDisplay)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -195,5 +223,7 @@ namespace PRG282_Assignment_GUI
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtUsername;
         private System.Windows.Forms.Button btnSearch;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.Label label2;
     }
 }
