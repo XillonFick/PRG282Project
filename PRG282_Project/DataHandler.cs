@@ -158,7 +158,9 @@ namespace PRG282_Project
 
         public DataTable Search(string StudentID)
         {
-            SqlDataAdapter adapter = new SqlDataAdapter("spSearchStudent", connect);
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlDataAdapter adapter = new SqlDataAdapter("spSearchStudent", con);
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
             adapter.SelectCommand.Parameters.AddWithValue("@ID", int.Parse(StudentID));
@@ -172,9 +174,9 @@ namespace PRG282_Project
 
         public void CreateNew(string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
         {
-            using (connect)
-            {
-                SqlCommand cmd = new SqlCommand("spAddStudent", connect);
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("spAddStudent", con);
                 cmd.CommandType = CommandType.StoredProcedure;
                 //Subject to change based on how db has been set up
                 //modules would liekley have to be passed as a Table and inserted into the modules table by the Stored Proc
@@ -188,7 +190,7 @@ namespace PRG282_Project
                 //cmd.Parameters.AddWithValue("@Adress", modulecodes);
                 cmd.ExecuteNonQuery();
 
-                SqlCommand Newcmd = new SqlCommand("spGetNewlyAddedStudent", connect);
+                SqlCommand Newcmd = new SqlCommand("spGetNewlyAddedStudent", con);
                 Int32 id = (Int32)Newcmd.ExecuteScalar();
 
                 foreach (string moduleID in modulecodes)
@@ -199,7 +201,7 @@ namespace PRG282_Project
                     string resourceLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                     SetModuleDefaults(moduleID, out moduleCode, out moduleName, out moduleDescription);
 
-                    SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", connect);
+                    SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", con);
                     moduleCmd.CommandType = CommandType.StoredProcedure;
                     moduleCmd.Parameters.AddWithValue("@ID", id);
                     moduleCmd.Parameters.AddWithValue("@ModuleCode", moduleCode);
@@ -211,7 +213,7 @@ namespace PRG282_Project
                 }
 
                 MessageBox.Show("Student Added Succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
+            
         }
 
         public void Update(int studID, string name, string surname, DateTime doB, string gender, string phoneNumber, string address, List<string> modulecodes)
@@ -259,7 +261,9 @@ namespace PRG282_Project
             using (connect)
             {
                 // Updating the students table with the new data
-                SqlCommand cmd = new SqlCommand("spUpdateStudent", connect);
+                SqlConnection con = new SqlConnection(connectionString);
+                con.Open();
+                SqlCommand cmd = new SqlCommand("spUpdateStudent", con);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@ID", studID);
@@ -273,7 +277,7 @@ namespace PRG282_Project
                 cmd.ExecuteNonQuery();
 
                 // removing the existing modules assigned to the student
-                SqlCommand deleteCmd = new SqlCommand("spRemoveStudentModules", connect);
+                SqlCommand deleteCmd = new SqlCommand("spRemoveStudentModules", con);
                 deleteCmd.CommandType = CommandType.StoredProcedure;
                 deleteCmd.Parameters.AddWithValue("@ID", studID);
                 deleteCmd.ExecuteNonQuery();
@@ -287,7 +291,7 @@ namespace PRG282_Project
                     string resourceLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                     SetModuleDefaults(moduleID, out moduleCode, out moduleName, out moduleDescription);
 
-                    SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", connect);
+                    SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", con);
                     moduleCmd.CommandType = CommandType.StoredProcedure;
                     moduleCmd.Parameters.AddWithValue("@ID", studID);
                     moduleCmd.Parameters.AddWithValue("@ModuleCode", moduleCode);
@@ -304,14 +308,14 @@ namespace PRG282_Project
 
         public void DeleteStudent(int studID)
         {
-            using (connect)
-            {
-                SqlCommand cmd = new SqlCommand("spDeleteStudent", connect);
-                cmd.CommandType = CommandType.StoredProcedure;
+            SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
+            SqlCommand cmd = new SqlCommand("spDeleteStudent", con);
+            cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("@ID", studID);
-                cmd.ExecuteNonQuery();
-            }
+            cmd.Parameters.AddWithValue("@ID", studID);
+            cmd.ExecuteNonQuery();
+
         }
     }
 }

@@ -39,6 +39,7 @@ namespace PRG282_Assignment_GUI
                         cmbGender.Text = "";
                         txtPhone.Text = "";
                         txtAddress.Text = "";
+                        txtID.Clear();
 
                         for (int i = 0; i < clbModules.Items.Count; i++)
                             clbModules.SetItemChecked(i, false);
@@ -75,6 +76,18 @@ namespace PRG282_Assignment_GUI
         private void txtSurname_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void txtCourse_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            this.Close();
+            main.Show();
         }
     }
 }

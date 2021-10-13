@@ -26,6 +26,9 @@ namespace PRG282_Assignment_GUI
 
         private void frmRead_Load(object sender, EventArgs e)
         {
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
+            label3.BackColor = System.Drawing.Color.Transparent;
 
             handler.Connect();
             dgvDisplayStudents.DataSource = handler.Read();
@@ -60,6 +63,13 @@ namespace PRG282_Assignment_GUI
             {
                 dgvDisplayStudents.DataSource = handler.Search(txtId.Text);
             }
+        }
+
+        private void btnBack_Click_1(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            this.Close();
+            main.Show();
         }
     }
 }

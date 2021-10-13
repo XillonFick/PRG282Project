@@ -72,7 +72,7 @@ namespace PRG282_Assignment_GUI
                     errorMessage = "Please choose a valid gender";
                     throw new Exception();
                 }
-                else if (cmbGender.Text != "Male" || cmbGender.Text != "Female")
+                else if (string.IsNullOrEmpty(cmbGender.Text))
                 {
                     errorMessage = "Gender must be male or female";
                     throw new Exception();
@@ -121,6 +121,13 @@ namespace PRG282_Assignment_GUI
 
             for (int i = 0; i < clbModules.Items.Count; i++)
                 clbModules.SetItemChecked(i, false);
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            this.Close();
+            main.Show();
         }
     }
 }

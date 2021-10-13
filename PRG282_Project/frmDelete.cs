@@ -60,5 +60,12 @@ namespace PRG282_Assignment_GUI
             label1.BackColor = System.Drawing.Color.Transparent;
             label3.BackColor = System.Drawing.Color.Transparent;
         }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            this.Close();
+            main.Show();
+        }
     }
 }

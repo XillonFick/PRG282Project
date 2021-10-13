@@ -62,13 +62,8 @@ namespace PRG282_Assignment_GUI
             // 
             // txtStudentID
             // 
-            this.txtStudentID.Location = new System.Drawing.Point(230, 109);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(117, 20);
-
             this.txtStudentID.Location = new System.Drawing.Point(212, 109);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2);
             this.txtStudentID.Name = "txtStudentID";
             this.txtStudentID.Size = new System.Drawing.Size(95, 20);
             this.txtStudentID.TabIndex = 10;
@@ -97,6 +92,7 @@ namespace PRG282_Assignment_GUI
             this.btnBack.TabIndex = 45;
             this.btnBack.Text = "Back";
             this.btnBack.UseVisualStyleBackColor = false;
+            this.btnBack.Click += new System.EventHandler(this.btnBack_Click);
             // 
             // frmDelete
             // 
