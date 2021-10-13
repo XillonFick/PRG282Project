@@ -13,7 +13,7 @@ namespace PRG282_Project
     {
         public DataHandler() { }
 
-        string connectionString = "Server=(local); Initial Catalog= ; Integrated Security = SSPI";
+        string connectionString = "Server=(local); Initial Catalog= PRG282_Project_Database; Integrated Security = SSPI";
 
         FileHandler filer = new FileHandler();
 
@@ -93,12 +93,45 @@ namespace PRG282_Project
         }
         public DataTable Read()
         {
-            SqlDataAdapter adapter = new SqlDataAdapter("",connect);
-
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlDataAdapter adapter = new SqlDataAdapter("spGetStudents", con);
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
+            DataTable table = new DataTable();
 
+            adapter.Fill(table);
+
+            return table;
         }
+        public DataTable getModules(string StudentID)
+        {
+            SqlConnection con = new SqlConnection(connectionString);
+            SqlDataAdapter adapter = new SqlDataAdapter("spGetStudentModules", con);
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            adapter.SelectCommand.Parameters.AddWithValue("@ID",StudentID);
+            
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            return table;
+        }
+
+        public DataTable Search(string StudentID)
+        {
+            SqlDataAdapter adapter = new SqlDataAdapter("spGetStudentModules", connect);
+            adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            adapter.SelectCommand.Parameters.AddWithValue("@ID", StudentID);
+
+            DataTable table = new DataTable();
+
+            adapter.Fill(table);
+
+            return table;
+        }
+
         public void CreateNew(string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
         {
             using (connect)

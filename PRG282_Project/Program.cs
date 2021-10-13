@@ -20,7 +20,7 @@ namespace PRG282_Project
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new frmRead());
 
             
         }

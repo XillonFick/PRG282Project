@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Text;
 using System.Windows.Forms;
@@ -12,6 +13,7 @@ namespace PRG282_Assignment_GUI
     public partial class frmRead : Form
     {
         DataHandler handler = new DataHandler();
+        BindingSource source = new BindingSource();
         public frmRead()
         {
             InitializeComponent();
@@ -24,7 +26,59 @@ namespace PRG282_Assignment_GUI
 
         private void frmRead_Load(object sender, EventArgs e)
         {
-            sql
+
+            source.DataSource = handler.Read();
+            dgvDisplayStudents.DataSource = source;
+
         }
+
+        private void btnFirst_Click(object sender, EventArgs e)
+        {
+            source.MoveFirst();
+        }
+
+        private void btnPrevious_Click(object sender, EventArgs e)
+        {
+            source.MoveNext();
+        }
+
+        private void btnNext_Click(object sender, EventArgs e)
+        {
+            source.MoveNext();
+
+        }
+
+        private void btnLast_Click(object sender, EventArgs e)
+        {
+            source.MoveLast();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmMain main = new frmMain();
+            this.Close();
+            main.Show();
+        }
+
+        private void btnSearch_Click(object sender, EventArgs e)
+        {
+            dgvDisplayStudents.DataSource = handler.Search(txtId.Text);
+        }
+
+        private void dgvDisplayStudents_SelectionChanged(object sender, EventArgs e)
+        {
+
+          
+        }
+
+        private void dgvDisplayStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                DataGridViewRow row = this.dgvDisplayStudents.Rows[e.RowIndex];
+                dgvModules.DataSource = handler.getModules(row.Cells["StudentNumber"].Value.ToString());
+            }
+        }
+
     }
 }

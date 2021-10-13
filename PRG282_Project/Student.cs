@@ -8,6 +8,7 @@ namespace PRG282_Project
 {
     class Student
     {
+        private string id;
         private string name;
         private string surname;
         private string course;
@@ -31,6 +32,19 @@ namespace PRG282_Project
             this.Modulecodes = modulecodes;
         }
 
+        public Student(string id, string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
+        {
+            this.id = id;
+            this.name = name;
+            this.surname = surname;
+            this.course = course;
+            this.doB = doB;
+            this.gender = gender;
+            this.phoneNumber = phoneNumber;
+            this.address = address;
+            this.modulecodes = modulecodes;
+        }
+
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
         public string Course { get => course; set => course = value; }
@@ -39,6 +53,7 @@ namespace PRG282_Project
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
         public string Address { get => address; set => address = value; }
         public List<string> Modulecodes { get => modulecodes; set => modulecodes = value; }
+        public string Id { get => id; set => id = value; }
 
         public override string ToString()
         {
