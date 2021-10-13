@@ -55,5 +55,10 @@ namespace PRG282_Assignment_GUI
             this.Close();
             log.Show();
         }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            label3.BackColor = System.Drawing.Color.Transparent;
+        }
     }
 }

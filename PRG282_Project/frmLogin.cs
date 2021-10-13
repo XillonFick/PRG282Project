@@ -24,6 +24,14 @@ namespace PRG282_Assignment_GUI
         private void frmLogin_Load(object sender, EventArgs e)
         {
             handler.Connect();
+            label3.BackColor = System.Drawing.Color.Transparent;
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
+            pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            System.Drawing.Drawing2D.GraphicsPath gp = new System.Drawing.Drawing2D.GraphicsPath();
+            gp.AddEllipse(0, 0, pictureBox1.Width - 0, pictureBox1.Height - 0);
+            Region rg = new Region(gp);
+            pictureBox1.Region = rg;
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

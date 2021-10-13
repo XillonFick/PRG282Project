@@ -14,3 +14,19 @@ C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Proj
 C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\obj\Debug\PRG282_Project.exe
 C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\obj\Debug\PRG282_Project.pdb
 C:\Users\xillo\OneDrive\Desktop\Study Material\2nd Year\Core\PRG 282\PRG282_Project\PRG282_Project\obj\Debug\PRG282_Project.frmRegister.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\bin\Debug\PRG282_Project.exe.config
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\bin\Debug\PRG282_Project.exe
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\bin\Debug\PRG282_Project.pdb
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.csproj.AssemblyReference.cache
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmLogin.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmCreate.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmDelete.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmRead.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmUpdate.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmMain.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.Properties.Resources.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.frmRegister.resources
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.csproj.GenerateResource.cache
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.csproj.CoreCompileInputs.cache
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.exe
+D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.pdb
