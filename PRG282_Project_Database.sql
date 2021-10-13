@@ -112,6 +112,9 @@ CREATE PROCEDURE spDeleteStudent
 )
 AS
 BEGIN
+	DELETE FROM tblModules
+	WHERE tblModules.StudentNumber = @ID
+
 	DELETE FROM tblStudents
 	WHERE StudentNumber = @ID
 END
@@ -169,3 +172,8 @@ AS
 BEGIN
 	SELECT TOP 1 StudentNumber FROM tblStudents ORDER BY StudentNumber DESC 
 END
+
+--USE PRG282_Project_Database
+--GO
+
+--SELECT * FROM tblModules

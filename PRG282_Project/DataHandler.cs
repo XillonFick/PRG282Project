@@ -25,6 +25,43 @@ namespace PRG282_Project
             connect.Open();
         }
 
+        private void SetModuleDefaults(string moduleIndex, out string moduleCode, out string moduleName, out string moduleDescription)
+        {
+            switch (moduleIndex)
+            {
+                case "1":
+                    moduleCode = "MAT281";
+                    moduleName = "Mathematics 281";
+                    moduleDescription = "Mathematics description";
+                    break;
+                case "2":
+                    moduleCode = "STA281";
+                    moduleName = "Statistics 281";
+                    moduleDescription = "Statistics description";
+                    break;
+                case "3":
+                    moduleCode = "PRG281";
+                    moduleName = "Programming 281";
+                    moduleDescription = "Programming description";
+                    break;
+                case "4":
+                    moduleCode = "DBD281";
+                    moduleName = "Database Design 281";
+                    moduleDescription = "Database development is fun!";
+                    break;
+                case "5":
+                    moduleCode = "NWD281";
+                    moduleName = "Network Design 281";
+                    moduleDescription = "Network development is fun!";
+                    break;
+                default:
+                    moduleCode = "MAT281";
+                    moduleName = "Mathematics 281";
+                    moduleDescription = "Mathematics description";
+                    break;
+            }
+        }
+
         public bool ValidateLogin(string name, string pass = "")
         {
             if (pass != "")
@@ -160,39 +197,7 @@ namespace PRG282_Project
                     string moduleName;
                     string moduleDescription;
                     string resourceLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
-                    switch (moduleID)
-                    {
-                        case "1":
-                            moduleCode = "MAT281";
-                            moduleName = "Mathematics 281";
-                            moduleDescription = "Mathematics description";
-                            break;
-                        case "2":
-                            moduleCode = "STA281";
-                            moduleName = "Statistics 281";
-                            moduleDescription = "Statistics description";
-                            break;
-                        case "3":
-                            moduleCode = "PRG281";
-                            moduleName = "Programming 281";
-                            moduleDescription = "Programming description";
-                            break;
-                        case "4":
-                            moduleCode = "DBD281";
-                            moduleName = "Database Design 281";
-                            moduleDescription = "Database development is fun!";
-                            break;
-                        case "5":
-                            moduleCode = "NWD281";
-                            moduleName = "Network Design 281";
-                            moduleDescription = "Network development is fun!";
-                            break;
-                        default:
-                            moduleCode = "MAT281";
-                            moduleName = "Mathematics 281";
-                            moduleDescription = "Mathematics description";
-                            break;
-                    }
+                    SetModuleDefaults(moduleID, out moduleCode, out moduleName, out moduleDescription);
 
                     SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", connect);
                     moduleCmd.CommandType = CommandType.StoredProcedure;
@@ -209,56 +214,91 @@ namespace PRG282_Project
             }
         }
 
-        public void Update(int studID, string name, string surname, DateTime doB, string gender, string phoneNumber, string address)
+        public void Update(int studID, string name, string surname, DateTime doB, string gender, string phoneNumber, string address, List<string> modulecodes)
         {
-            string iName = "StudentName= StudentName";
-            string iSurname = "StudentSurname= StudentSurname";
-            string iDOB = "DOB = DOB";
-            string iGender = "Gender = Gender";
-            string iPhone = "Phone = Phone";
-            string iAdress = "Adress = Adress";
+            string iName = "StudentName";
+            string iSurname = "StudentSurname";
+            string iDOB = "DOB";
+            string iGender = "Gender";
+            string iPhone = "Phone";
+            string iAdress = "Adress";
 
 
             if (string.IsNullOrEmpty(name) == false)
             {
-                iName = string.Format("StudentName= {0}", name);
+                //iName = string.Format("StudentName= {0}", name);
+                iName = name;
             }
             if (string.IsNullOrEmpty(surname) == false)
             {
-                iSurname = string.Format("StudentSurname= {0}", name);
+                //iSurname = string.Format("StudentSurname= {0}", name);
+                iSurname = surname;
             }
             if (string.IsNullOrEmpty(doB.ToString()) == false)
             {
-                iDOB = string.Format("DOB = {0}", doB) ;
+                //iDOB = string.Format("DOB = {0}", doB) ;
+                //iDOB = doB;
             }
             if (string.IsNullOrEmpty(gender.ToString()) == false)
             {
-                iGender = string.Format("Gender = {0}", gender.ToString());
+                //iGender = string.Format("Gender = {0}", gender.ToString());
+                iGender = gender;
             }
             if (string.IsNullOrEmpty(phoneNumber) == false)
             {
-                iPhone = string.Format("Phone = {0}", phoneNumber);
+                //iPhone = string.Format("Phone = {0}", phoneNumber);
+                iPhone = phoneNumber;
             }
             if (string.IsNullOrEmpty(address) == false)
             {
-                iAdress = string.Format("Adress = {0}", address);
+                //iAdress = string.Format("Adress = {0}", address);
+                iAdress = address;
             }
 
 
             using (connect)
             {
+                // Updating the students table with the new data
                 SqlCommand cmd = new SqlCommand("spUpdateStudent", connect);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@ID", studID);
                 cmd.Parameters.AddWithValue("@Name", iName);
                 cmd.Parameters.AddWithValue("@Surname", iSurname);
-                cmd.Parameters.AddWithValue("@DOB", iDOB);
+                cmd.Parameters.AddWithValue("@DOB", doB);
                 cmd.Parameters.AddWithValue("@Gender", iGender);
                 cmd.Parameters.AddWithValue("@Phone", iPhone);
                 cmd.Parameters.AddWithValue("@Address", iAdress);
 
                 cmd.ExecuteNonQuery();
+
+                // removing the existing modules assigned to the student
+                SqlCommand deleteCmd = new SqlCommand("spRemoveStudentModules", connect);
+                deleteCmd.CommandType = CommandType.StoredProcedure;
+                deleteCmd.Parameters.AddWithValue("@ID", studID);
+                deleteCmd.ExecuteNonQuery();
+
+                // Assigning the selected modules to the student
+                foreach (string moduleID in modulecodes)
+                {
+                    string moduleCode;
+                    string moduleName;
+                    string moduleDescription;
+                    string resourceLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
+                    SetModuleDefaults(moduleID, out moduleCode, out moduleName, out moduleDescription);
+
+                    SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", connect);
+                    moduleCmd.CommandType = CommandType.StoredProcedure;
+                    moduleCmd.Parameters.AddWithValue("@ID", studID);
+                    moduleCmd.Parameters.AddWithValue("@ModuleCode", moduleCode);
+                    moduleCmd.Parameters.AddWithValue("@ModuleName", moduleName);
+                    moduleCmd.Parameters.AddWithValue("@ModuleDescription", moduleDescription);
+                    moduleCmd.Parameters.AddWithValue("@ResourceLinks", resourceLink);
+
+                    moduleCmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Student Successfully Updated", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
         }
 

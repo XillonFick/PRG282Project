@@ -25,7 +25,23 @@ namespace PRG282_Assignment_GUI
                 {
                     if ((DateTime.TryParse(txtDoB.Text, out DateTime date)) || string.IsNullOrEmpty(txtDoB.Text))
                     {
-                        handler.Update(ID, txtName.Text, txtSurname.Text, date, cmbGender.Text, txtPhone.Text, txtAddress.Text);
+                        List<string> modules = new List<string>();
+                        for (int i = 0; i < clbModules.Items.Count; i++)
+                        {
+                            if (clbModules.GetItemChecked(i))
+                                modules.Add((i + 1).ToString());
+                        }
+
+                        handler.Update(ID, txtName.Text, txtSurname.Text, date, cmbGender.Text, txtPhone.Text, txtAddress.Text, modules);
+                        txtName.Text = "";
+                        txtSurname.Text = "";
+                        txtDoB.Text = "";
+                        cmbGender.Text = "";
+                        txtPhone.Text = "";
+                        txtAddress.Text = "";
+
+                        for (int i = 0; i < clbModules.Items.Count; i++)
+                            clbModules.SetItemChecked(i, false);
                     }
                     else
                     {
@@ -39,12 +55,12 @@ namespace PRG282_Assignment_GUI
             }
             catch (InvalidDate)
             {
-
+                
                 MessageBox.Show("Insert Valid DoB", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             catch (Exception er)
             {
-
+                // error thrown here
                 MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
@@ -54,6 +70,11 @@ namespace PRG282_Assignment_GUI
         private void frmUpdate_Load(object sender, EventArgs e)
         {
             handler.Connect();
+        }
+
+        private void txtSurname_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
