@@ -106,6 +106,7 @@ namespace PRG282_Project
         public DataTable getModules(string StudentID)
         {
             SqlConnection con = new SqlConnection(connectionString);
+            con.Open();
             SqlDataAdapter adapter = new SqlDataAdapter("spGetStudentModules", con);
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
@@ -114,16 +115,16 @@ namespace PRG282_Project
             DataTable table = new DataTable();
 
             adapter.Fill(table);
-
+            con.Close(); 
             return table;
         }
 
         public DataTable Search(string StudentID)
         {
-            SqlDataAdapter adapter = new SqlDataAdapter("spGetStudentModules", connect);
+            SqlDataAdapter adapter = new SqlDataAdapter("spSearchStudent", connect);
             adapter.SelectCommand.CommandType = CommandType.StoredProcedure;
 
-            adapter.SelectCommand.Parameters.AddWithValue("@ID", StudentID);
+            adapter.SelectCommand.Parameters.AddWithValue("@ID", int.Parse(StudentID));
 
             DataTable table = new DataTable();
 

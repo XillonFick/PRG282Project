@@ -27,7 +27,7 @@ namespace PRG282_Assignment_GUI
         private void frmRead_Load(object sender, EventArgs e)
         {
 
-           
+            handler.Connect();
             dgvDisplayStudents.DataSource = handler.Read();
 
         }
@@ -42,11 +42,10 @@ namespace PRG282_Assignment_GUI
 
         private void btnSearch_Click(object sender, EventArgs e)
         {
-            dgvDisplayStudents.DataSource = handler.Search(txtId.Text);
+  
         }
 
-
-        private void dgvDisplayStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvDisplayStudents_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
@@ -55,5 +54,12 @@ namespace PRG282_Assignment_GUI
             }
         }
 
+        private void btnSearch_Click_1(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txtId.Text) != true)
+            {
+                dgvDisplayStudents.DataSource = handler.Search(txtId.Text);
+            }
+        }
     }
 }

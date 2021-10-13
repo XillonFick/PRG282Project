@@ -58,20 +58,20 @@ namespace PRG282_Assignment_GUI
             // 
             this.dgvDisplayStudents.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDisplayStudents.Location = new System.Drawing.Point(9, 47);
-            this.dgvDisplayStudents.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvDisplayStudents.Margin = new System.Windows.Forms.Padding(2);
             this.dgvDisplayStudents.Name = "dgvDisplayStudents";
             this.dgvDisplayStudents.RowHeadersWidth = 51;
             this.dgvDisplayStudents.RowTemplate.Height = 29;
             this.dgvDisplayStudents.Size = new System.Drawing.Size(442, 122);
             this.dgvDisplayStudents.TabIndex = 8;
-   
+            this.dgvDisplayStudents.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvDisplayStudents_CellClick);
             // 
             // btnBack
             // 
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
             this.btnBack.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnBack.Location = new System.Drawing.Point(6, 338);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(99, 32);
             this.btnBack.TabIndex = 24;
@@ -82,7 +82,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label1.Location = new System.Drawing.Point(130, 341);
+            this.label1.Location = new System.Drawing.Point(121, 342);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(107, 28);
@@ -92,7 +92,7 @@ namespace PRG282_Assignment_GUI
             // txtId
             // 
             this.txtId.Location = new System.Drawing.Point(232, 348);
-            this.txtId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtId.Margin = new System.Windows.Forms.Padding(2);
             this.txtId.Name = "txtId";
             this.txtId.Size = new System.Drawing.Size(100, 20);
             this.txtId.TabIndex = 29;
@@ -103,18 +103,19 @@ namespace PRG282_Assignment_GUI
             this.btnSearch.BackColor = System.Drawing.SystemColors.Info;
             this.btnSearch.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnSearch.Location = new System.Drawing.Point(350, 339);
-            this.btnSearch.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSearch.Margin = new System.Windows.Forms.Padding(2);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(99, 31);
             this.btnSearch.TabIndex = 31;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = false;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click_1);
             // 
             // dgvModules
             // 
             this.dgvModules.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvModules.Location = new System.Drawing.Point(9, 202);
-            this.dgvModules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dgvModules.Margin = new System.Windows.Forms.Padding(2);
             this.dgvModules.Name = "dgvModules";
             this.dgvModules.RowHeadersWidth = 51;
             this.dgvModules.RowTemplate.Height = 29;
@@ -148,7 +149,7 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.dgvDisplayStudents);
             this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmRead";
             this.Text = "Read";
             this.Load += new System.EventHandler(this.frmRead_Load);

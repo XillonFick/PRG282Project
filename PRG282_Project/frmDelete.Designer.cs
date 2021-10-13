@@ -62,17 +62,10 @@ namespace PRG282_Assignment_GUI
             // 
             // txtStudentID
             // 
-<<<<<<< Updated upstream
-            this.txtStudentID.Location = new System.Drawing.Point(280, 136);
+            this.txtStudentID.Location = new System.Drawing.Point(230, 109);
             this.txtStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(117, 22);
-=======
-            this.txtStudentID.Location = new System.Drawing.Point(212, 109);
-            this.txtStudentID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(95, 20);
->>>>>>> Stashed changes
+            this.txtStudentID.Size = new System.Drawing.Size(117, 20);
             this.txtStudentID.TabIndex = 10;
             // 
             // btnDelete
@@ -80,7 +73,7 @@ namespace PRG282_Assignment_GUI
             this.btnDelete.BackColor = System.Drawing.SystemColors.Info;
             this.btnDelete.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnDelete.Location = new System.Drawing.Point(230, 156);
-            this.btnDelete.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(99, 32);
             this.btnDelete.TabIndex = 44;
@@ -93,7 +86,7 @@ namespace PRG282_Assignment_GUI
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
             this.btnBack.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnBack.Location = new System.Drawing.Point(93, 156);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(99, 32);
             this.btnBack.TabIndex = 45;
@@ -113,7 +106,7 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.txtStudentID);
             this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmDelete";
             this.Text = "Delete";
             this.Load += new System.EventHandler(this.frmDelete_Load);
