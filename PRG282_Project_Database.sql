@@ -127,3 +127,38 @@ BEGIN
 	SELECT * FROM tblModules
 	WHERE tblModules.StudentNumber = @ID
 END
+
+
+GO
+
+USE PRG282_Project_Database
+GO
+
+CREATE PROCEDURE spRemoveStudentModules
+(
+	@ID INT
+)
+AS
+BEGIN
+	DELETE FROM tblModules
+	WHERE StudentNumber = @ID
+END
+
+GO
+
+CREATE PROCEDURE spAddModuleToStudent
+(
+	@ID INT,
+	@ModuleCode VARCHAR(10),
+	@ModuleName VARCHAR(30),
+	@ModuleDescription VARCHAR(75),
+	@ResourceLinks VARCHAR(100)
+)
+AS
+BEGIN
+	INSERT INTO tblModules
+	VALUES
+	(@ModuleCode, @ModuleName, @ModuleDescription, @ResourceLinks, @ID);
+END
+
+
