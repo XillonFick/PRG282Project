@@ -70,7 +70,7 @@ CREATE PROCEDURE spAddStudent
 AS
 BEGIN
 	INSERT INTO tblStudents
-	VALUES (@Name, @Surname, 1, @DOB, @Gender, @Phone, @Address)
+	VALUES (@Name, @Surname, NULL, @DOB, @Gender, @Phone, @Address)
 END
 
 GO
