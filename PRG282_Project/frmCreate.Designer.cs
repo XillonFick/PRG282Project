@@ -217,6 +217,7 @@ namespace PRG282_Assignment_GUI
             this.btnCreate.TabIndex = 24;
             this.btnCreate.Text = "Create";
             this.btnCreate.UseVisualStyleBackColor = false;
+            this.btnCreate.Click += new System.EventHandler(this.btnCreate_Click);
             // 
             // cmbGender
             // 

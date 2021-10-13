@@ -30,3 +30,18 @@ D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Proj
 D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.csproj.CoreCompileInputs.cache
 D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.exe
 D:\Belgium Campus work\Year 2\PRG 282\Project Git repo\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.pdb
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\bin\Debug\PRG282_Project.exe.config
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\bin\Debug\PRG282_Project.exe
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\bin\Debug\PRG282_Project.pdb
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.csprojAssemblyReference.cache
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmLogin.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmCreate.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmDelete.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmRead.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmUpdate.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Assignment_GUI.frmMain.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.Properties.Resources.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.frmRegister.resources
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.csproj.GenerateResource.cache
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.exe
+C:\Users\joube\OneDrive\Documents\GitHub\PRG282Project\PRG282_Project\obj\Debug\PRG282_Project.pdb

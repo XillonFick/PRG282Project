@@ -136,18 +136,32 @@ namespace PRG282_Project
         {
             using (connect)
             {
-                SqlCommand cmd = new SqlCommand("", connect);
+                SqlCommand cmd = new SqlCommand("spAddStudent", connect);
                 cmd.CommandType = CommandType.StoredProcedure;
                 //Subject to change based on how db has been set up
                 //modules would liekley have to be passed as a Table and inserted into the modules table by the Stored Proc
-                cmd.Parameters.AddWithValue("", name);
-                cmd.Parameters.AddWithValue("", surname);
-                cmd.Parameters.AddWithValue("", course);
-                cmd.Parameters.AddWithValue("", doB);
-                cmd.Parameters.AddWithValue("", gender);
-                cmd.Parameters.AddWithValue("", phoneNumber);
-                cmd.Parameters.AddWithValue("", address);
-                cmd.Parameters.AddWithValue("", modulecodes);
+                cmd.Parameters.AddWithValue("@Name", name);
+                cmd.Parameters.AddWithValue("@Surname", surname);
+                //cmd.Parameters.AddWithValue("", course);  Not course column exists yet
+                cmd.Parameters.AddWithValue("@DOB", doB);
+                cmd.Parameters.AddWithValue("@Gender", gender);
+                cmd.Parameters.AddWithValue("@Phone", phoneNumber);
+                cmd.Parameters.AddWithValue("@Phone", address);
+                //cmd.Parameters.AddWithValue("@Adress", modulecodes);
+
+                foreach (string moduleID in modulecodes)
+                {
+                    string moduleCode;
+                    string moduleName;
+                    string moduleDescription;
+                    switch (moduleID)
+                    {
+                        case "1":
+
+                        default:
+                            break;
+                    }
+                }
             }
 
         }
