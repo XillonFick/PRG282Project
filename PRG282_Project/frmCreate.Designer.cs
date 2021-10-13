@@ -33,8 +33,6 @@ namespace PRG282_Assignment_GUI
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtID = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.txtDoB = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -66,7 +64,7 @@ namespace PRG282_Assignment_GUI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label2.Location = new System.Drawing.Point(12, 128);
+            this.label2.Location = new System.Drawing.Point(12, 91);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(167, 35);
             this.label2.TabIndex = 10;
@@ -74,37 +72,17 @@ namespace PRG282_Assignment_GUI
             // 
             // txtName
             // 
-            this.txtName.Location = new System.Drawing.Point(219, 133);
+            this.txtName.Location = new System.Drawing.Point(237, 100);
             this.txtName.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtName.Name = "txtName";
-            this.txtName.PasswordChar = '*';
             this.txtName.Size = new System.Drawing.Size(125, 22);
             this.txtName.TabIndex = 9;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label1.Location = new System.Drawing.Point(12, 89);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 35);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Student ID:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // txtID
-            // 
-            this.txtID.Location = new System.Drawing.Point(219, 94);
-            this.txtID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.txtID.Name = "txtID";
-            this.txtID.Size = new System.Drawing.Size(125, 22);
-            this.txtID.TabIndex = 7;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label4.Location = new System.Drawing.Point(12, 204);
+            this.label4.Location = new System.Drawing.Point(12, 170);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(155, 35);
             this.label4.TabIndex = 14;
@@ -112,18 +90,17 @@ namespace PRG282_Assignment_GUI
             // 
             // txtDoB
             // 
-            this.txtDoB.Location = new System.Drawing.Point(219, 208);
+            this.txtDoB.Location = new System.Drawing.Point(237, 179);
             this.txtDoB.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtDoB.Name = "txtDoB";
-            this.txtDoB.PasswordChar = '*';
             this.txtDoB.Size = new System.Drawing.Size(125, 22);
-            this.txtDoB.TabIndex = 13;
+            this.txtDoB.TabIndex = 11;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label5.Location = new System.Drawing.Point(12, 164);
+            this.label5.Location = new System.Drawing.Point(12, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(199, 35);
             this.label5.TabIndex = 12;
@@ -131,11 +108,11 @@ namespace PRG282_Assignment_GUI
             // 
             // txtSurname
             // 
-            this.txtSurname.Location = new System.Drawing.Point(219, 170);
+            this.txtSurname.Location = new System.Drawing.Point(237, 139);
             this.txtSurname.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(125, 22);
-            this.txtSurname.TabIndex = 11;
+            this.txtSurname.TabIndex = 10;
             // 
             // label6
             // 
@@ -163,7 +140,7 @@ namespace PRG282_Assignment_GUI
             this.txtAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(125, 22);
-            this.txtAddress.TabIndex = 19;
+            this.txtAddress.TabIndex = 14;
             // 
             // label8
             // 
@@ -180,9 +157,8 @@ namespace PRG282_Assignment_GUI
             this.txtPhone.Location = new System.Drawing.Point(565, 133);
             this.txtPhone.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtPhone.Name = "txtPhone";
-            this.txtPhone.PasswordChar = '*';
             this.txtPhone.Size = new System.Drawing.Size(125, 22);
-            this.txtPhone.TabIndex = 17;
+            this.txtPhone.TabIndex = 13;
             // 
             // label9
             // 
@@ -229,11 +205,12 @@ namespace PRG282_Assignment_GUI
             this.cmbGender.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(125, 24);
-            this.cmbGender.TabIndex = 25;
+            this.cmbGender.TabIndex = 12;
             // 
             // clbModules
             // 
             this.clbModules.BackColor = System.Drawing.SystemColors.ButtonFace;
+            this.clbModules.CheckOnClick = true;
             this.clbModules.Font = new System.Drawing.Font("Segoe Print", 11F);
             this.clbModules.FormattingEnabled = true;
             this.clbModules.Items.AddRange(new object[] {
@@ -246,7 +223,7 @@ namespace PRG282_Assignment_GUI
             this.clbModules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clbModules.Name = "clbModules";
             this.clbModules.Size = new System.Drawing.Size(181, 109);
-            this.clbModules.TabIndex = 26;
+            this.clbModules.TabIndex = 15;
             // 
             // frmCreate
             // 
@@ -271,8 +248,6 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.txtSurname);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.txtName);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.txtID);
             this.Controls.Add(this.label3);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -289,8 +264,6 @@ namespace PRG282_Assignment_GUI
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtName;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox txtID;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtDoB;
         private System.Windows.Forms.Label label5;

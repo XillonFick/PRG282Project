@@ -147,24 +147,66 @@ namespace PRG282_Project
                 cmd.Parameters.AddWithValue("@DOB", doB);
                 cmd.Parameters.AddWithValue("@Gender", gender);
                 cmd.Parameters.AddWithValue("@Phone", phoneNumber);
-                cmd.Parameters.AddWithValue("@Phone", address);
+                cmd.Parameters.AddWithValue("@Address", address);
                 //cmd.Parameters.AddWithValue("@Adress", modulecodes);
+                cmd.ExecuteNonQuery();
+
+                SqlCommand Newcmd = new SqlCommand("spGetNewlyAddedStudent", connect);
+                Int32 id = (Int32)Newcmd.ExecuteScalar();
 
                 foreach (string moduleID in modulecodes)
                 {
                     string moduleCode;
                     string moduleName;
                     string moduleDescription;
+                    string resourceLink = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
                     switch (moduleID)
                     {
                         case "1":
-
+                            moduleCode = "MAT281";
+                            moduleName = "Mathematics 281";
+                            moduleDescription = "Mathematics description";
+                            break;
+                        case "2":
+                            moduleCode = "STA281";
+                            moduleName = "Statistics 281";
+                            moduleDescription = "Statistics description";
+                            break;
+                        case "3":
+                            moduleCode = "PRG281";
+                            moduleName = "Programming 281";
+                            moduleDescription = "Programming description";
+                            break;
+                        case "4":
+                            moduleCode = "DBD281";
+                            moduleName = "Database Design 281";
+                            moduleDescription = "Database development is fun!";
+                            break;
+                        case "5":
+                            moduleCode = "NWD281";
+                            moduleName = "Network Design 281";
+                            moduleDescription = "Network development is fun!";
+                            break;
                         default:
+                            moduleCode = "MAT281";
+                            moduleName = "Mathematics 281";
+                            moduleDescription = "Mathematics description";
                             break;
                     }
-                }
-            }
 
+                    SqlCommand moduleCmd = new SqlCommand("spAddModuleToStudent", connect);
+                    moduleCmd.CommandType = CommandType.StoredProcedure;
+                    moduleCmd.Parameters.AddWithValue("@ID", id);
+                    moduleCmd.Parameters.AddWithValue("@ModuleCode", moduleCode);
+                    moduleCmd.Parameters.AddWithValue("@ModuleName", moduleName);
+                    moduleCmd.Parameters.AddWithValue("@ModuleDescription", moduleDescription);
+                    moduleCmd.Parameters.AddWithValue("@ResourceLinks", resourceLink);
+
+                    moduleCmd.ExecuteNonQuery();
+                }
+
+                MessageBox.Show("Student Added Succesfully", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
         }
 
         public void Update(int studID, string name, string surname, DateTime doB, string gender, string phoneNumber, string address)

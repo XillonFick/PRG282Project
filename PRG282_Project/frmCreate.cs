@@ -25,7 +25,6 @@ namespace PRG282_Assignment_GUI
 
         private void frmCreate_Load(object sender, EventArgs e)
         {
-            label1.BackColor = System.Drawing.Color.Transparent;
             label2.BackColor = System.Drawing.Color.Transparent;
             label3.BackColor = System.Drawing.Color.Transparent;
             label4.BackColor = System.Drawing.Color.Transparent;
@@ -47,11 +46,81 @@ namespace PRG282_Assignment_GUI
                     modules.Add((i + 1).ToString());
             }
 
+            string errorMessage = "Default Error Message";
+            try
+            {
+                if (String.IsNullOrEmpty(txtName.Text))
+                {
+                    errorMessage = "Please enter a valid name";
+                    throw new Exception();
+                }
+
+                if (String.IsNullOrEmpty(txtSurname.Text))
+                {
+                    errorMessage = "Please enter a valid surname";
+                    throw new Exception();
+                }
+
+                if (String.IsNullOrEmpty(txtDoB.Text))
+                {
+                    errorMessage = "Please enter a valid Date of Birth";
+                    throw new Exception();
+                }
+
+                if (String.IsNullOrEmpty(cmbGender.Text))
+                {
+                    errorMessage = "Please choose a valid gender";
+                    throw new Exception();
+                }
+                else if (cmbGender.Text != "Male" || cmbGender.Text != "Female")
+                {
+                    errorMessage = "Gender must be male or female";
+                    throw new Exception();
+                }
+
+                if (String.IsNullOrEmpty(txtPhone.Text) || txtPhone.Text.Length != 10)
+                {
+                    errorMessage = "Please enter a valid phone number that is exactly 10 digits long";
+                    throw new Exception();
+                }
+                else if (!int.TryParse(txtPhone.Text, out int number))
+                {
+                    errorMessage = "Phone number must be a a valid integer number";
+                    throw new Exception();
+                }
+
+                if (String.IsNullOrEmpty(txtAddress.Text))
+                {
+                    errorMessage = "Please enter a valid address";
+                    throw new Exception();
+                }
+
+                if (modules.Count <= 0)
+                {
+                    errorMessage = "Must select atleast 1 module";
+                    throw new Exception();
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(errorMessage, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
             DateTime date;
             if (!DateTime.TryParse(txtDoB.Text, out date))
                 date = DateTime.Now;
 
             data.CreateNew(txtName.Text, txtSurname.Text, "Some Course", date, cmbGender.SelectedItem.ToString()[0], txtPhone.Text, txtAddress.Text, modules);
+            txtName.Text = "";
+            txtSurname.Text = "";
+            txtDoB.Text = "";
+            cmbGender.Text = "";
+            txtPhone.Text = "";
+            txtAddress.Text = "";
+
+            for (int i = 0; i < clbModules.Items.Count; i++)
+                clbModules.SetItemChecked(i, false);
         }
     }
 }
