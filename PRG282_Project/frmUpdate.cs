@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PRG282_Project;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,6 +11,7 @@ namespace PRG282_Assignment_GUI
 {
     public partial class frmUpdate : Form
     {
+        DataHandler handler = new DataHandler();
         public frmUpdate()
         {
             InitializeComponent();
@@ -17,7 +19,36 @@ namespace PRG282_Assignment_GUI
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
+            try
+            {
+                if (int.TryParse(txtID.Text, out int ID))
+                {
+                    if (DateTime.TryParse(txtDoB.Text, out DateTime date))
+                    {
+                        handler.Update(ID, txtName.Text, txtSurname.Text, txtCourse.Text, date, cmbGender.Text, txtPhone.Text, txtAddress.Text);
+                    }
+                    else
+                    {
+                        throw new InvalidDate();
+                    }
+                }
+                else
+                {
+                    throw new Exception();
+                }
+            }
+            catch (InvalidDate)
+            {
 
+                MessageBox.Show("Insert Valid DoB", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            catch (Exception)
+            {
+
+                MessageBox.Show("Insert Valid studentNumber", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+           
+           
         }
     }
 }

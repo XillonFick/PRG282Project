@@ -45,11 +45,6 @@ namespace PRG282_Assignment_GUI
             dgvDisplayStudents.DataSource = handler.Search(txtId.Text);
         }
 
-        private void dgvDisplayStudents_SelectionChanged(object sender, EventArgs e)
-        {
-
-          
-        }
 
         private void dgvDisplayStudents_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {

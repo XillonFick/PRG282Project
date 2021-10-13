@@ -152,7 +152,7 @@ namespace PRG282_Project
 
         }
 
-        public void Update(int studID, string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address)
+        public void Update(int studID, string name, string surname, string course, DateTime doB, string gender, string phoneNumber, string address)
         {
             string iName = "StudentName= StudentName";
             string iSurname = "StudentSurname= StudentSurname";
@@ -215,7 +215,7 @@ namespace PRG282_Project
         {
             using (connect)
             {
-                SqlCommand cmd = new SqlCommand("", connect);
+                SqlCommand cmd = new SqlCommand("spDeleteStudent", connect);
                 cmd.CommandType = CommandType.StoredProcedure;
 
                 cmd.Parameters.AddWithValue("@ID", studID);

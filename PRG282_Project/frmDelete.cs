@@ -56,6 +56,7 @@ namespace PRG282_Assignment_GUI
 
         private void frmDelete_Load(object sender, EventArgs e)
         {
+            handler.Connect();
             label1.BackColor = System.Drawing.Color.Transparent;
             label3.BackColor = System.Drawing.Color.Transparent;
         }

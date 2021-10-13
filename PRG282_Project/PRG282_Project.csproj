@@ -78,6 +78,7 @@
     <Compile Include="frmUpdate.Designer.cs">
       <DependentUpon>frmUpdate.cs</DependentUpon>
     </Compile>
+    <Compile Include="InvalidDate.cs" />
     <Compile Include="LoginDetails.cs" />
     <Compile Include="Main.cs">
       <SubType>Form</SubType>
