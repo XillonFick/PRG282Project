@@ -58,7 +58,10 @@ namespace PRG282_Project
 
         private void frmRegister_Load(object sender, EventArgs e)
         {
-
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
+            label3.BackColor = System.Drawing.Color.Transparent;
+            label4.BackColor = System.Drawing.Color.Transparent;
         }
     }
 }

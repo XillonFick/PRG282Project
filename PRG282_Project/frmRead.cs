@@ -24,7 +24,9 @@ namespace PRG282_Assignment_GUI
 
         private void frmRead_Load(object sender, EventArgs e)
         {
-            sql
+            label1.BackColor = System.Drawing.Color.Transparent;
+            label2.BackColor = System.Drawing.Color.Transparent;
+            label3.BackColor = System.Drawing.Color.Transparent;
         }
     }
 }
