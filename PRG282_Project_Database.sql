@@ -7,7 +7,7 @@ CREATE TABLE tblStudents
 	StudentNumber INT IDENTITY(1,1) PRIMARY KEY,
 	StudentName VARCHAR(30) NOT NULL,
 	StudentSurname VARCHAR(30) NOT NULL,
-	StudentImage VARBINARY(MAX) NOT NULL,
+	StudentImage VARBINARY(MAX),
 	DOB DATETIME NOT NULL,
 	Gender VARCHAR NOT NULL,
 	Phone VARCHAR(10) NOT NULL,
@@ -28,11 +28,11 @@ GO
 
 INSERT INTO tblStudents
 VALUES
-('Joubert', 'Van Zyl', 1, GETDATE(), 'M', '0120987654', 'Some address'),
-('Xillon', 'Fick', 1, GETDATE(), 'M', '0120983637', 'Some address'),
-('Josh', 'Hoffman', 1, GETDATE(), 'M', '0121234567', 'Some address'),
-('Francois', 'Birkholtz', 1, GETDATE(), 'M', '0120987654', 'Some address'),
-('Joubert', 'Van Zyl', 1, GETDATE(), 'M', '0120987654', 'Some address')
+('Joubert', 'Van Zyl', NULL, GETDATE(), 'M', '0120987654', 'Some address'),
+('Xillon', 'Fick', NULL, GETDATE(), 'M', '0120983637', 'Some address'),
+('Josh', 'Hoffman', NULL, GETDATE(), 'M', '0121234567', 'Some address'),
+('Francois', 'Birkholtz', NULL, GETDATE(), 'M', '0120987654', 'Some address'),
+('Joubert', 'Van Zyl', NULL, GETDATE(), 'M', '0120987654', 'Some address')
 
 GO
 
@@ -160,5 +160,3 @@ BEGIN
 	VALUES
 	(@ModuleCode, @ModuleName, @ModuleDescription, @ResourceLinks, @ID);
 END
-
-
