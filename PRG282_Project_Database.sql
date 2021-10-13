@@ -160,3 +160,12 @@ BEGIN
 	VALUES
 	(@ModuleCode, @ModuleName, @ModuleDescription, @ResourceLinks, @ID);
 END
+
+USE PRG282_Project_Database
+GO
+
+CREATE PROCEDURE spGetNewlyAddedStudent
+AS
+BEGIN
+	SELECT TOP 1 StudentNumber FROM tblStudents ORDER BY StudentNumber DESC 
+END
