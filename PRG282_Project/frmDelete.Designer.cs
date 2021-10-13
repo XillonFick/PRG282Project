@@ -60,10 +60,10 @@ namespace PRG282_Assignment_GUI
             // 
             // txtStudentID
             // 
-            this.txtStudentID.Location = new System.Drawing.Point(261, 136);
+            this.txtStudentID.Location = new System.Drawing.Point(280, 136);
             this.txtStudentID.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.txtStudentID.Name = "txtStudentID";
-            this.txtStudentID.Size = new System.Drawing.Size(125, 22);
+            this.txtStudentID.Size = new System.Drawing.Size(117, 22);
             this.txtStudentID.TabIndex = 10;
             // 
             // btnDelete
