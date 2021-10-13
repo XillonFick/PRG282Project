@@ -11,7 +11,7 @@ namespace PRG282_Project
         private string id;
         private string name;
         private string surname;
-        private string course;
+ 
         private DateTime doB;
         private char gender;
         private string phoneNumber;
@@ -20,11 +20,11 @@ namespace PRG282_Project
 
         public Student() { }
 
-        public Student(string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
+        public Student(string name, string surname, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
         {
             this.Name = name;
             this.Surname = surname;  
-            this.Course = course;
+          
             this.DoB = doB;
             this.Gender = gender;
             this.PhoneNumber = phoneNumber;
@@ -32,12 +32,12 @@ namespace PRG282_Project
             this.Modulecodes = modulecodes;
         }
 
-        public Student(string id, string name, string surname, string course, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
+        public Student(string id, string name, string surname, DateTime doB, char gender, string phoneNumber, string address, List<string> modulecodes)
         {
             this.id = id;
             this.name = name;
             this.surname = surname;
-            this.course = course;
+         
             this.doB = doB;
             this.gender = gender;
             this.phoneNumber = phoneNumber;
@@ -47,7 +47,7 @@ namespace PRG282_Project
 
         public string Name { get => name; set => name = value; }
         public string Surname { get => surname; set => surname = value; }
-        public string Course { get => course; set => course = value; }
+        
         public DateTime DoB { get => doB; set => doB = value; }
         public char Gender { get => gender; set => gender = value; }
         public string PhoneNumber { get => phoneNumber; set => phoneNumber = value; }
@@ -62,8 +62,8 @@ namespace PRG282_Project
             {
                 modules += string.Format("\n{0}",item.ToString());
             }
-            return string.Format("{0},{1},{2},{3},{4},{5},{6},{7}",
-                this.Name,this.Surname,this.Course,this.DoB,this.DoB.ToString(),this.Gender,this.PhoneNumber,this.Address,modules);
+            return string.Format("{0},{1},{2},{3},{4},{5},{6}",
+                this.Name,this.Surname,this.DoB,this.DoB.ToString(),this.Gender,this.PhoneNumber,this.Address,modules);
         }
     }
 }

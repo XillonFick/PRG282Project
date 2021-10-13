@@ -58,7 +58,7 @@ namespace PRG282_Assignment_GUI
             this.btnUpdate.BackColor = System.Drawing.SystemColors.Info;
             this.btnUpdate.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnUpdate.Location = new System.Drawing.Point(398, 262);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(2);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(99, 34);
             this.btnUpdate.TabIndex = 43;
@@ -71,7 +71,7 @@ namespace PRG282_Assignment_GUI
             this.btnBack.BackColor = System.Drawing.SystemColors.Info;
             this.btnBack.Font = new System.Drawing.Font("Segoe Print", 12F);
             this.btnBack.Location = new System.Drawing.Point(208, 262);
-            this.btnBack.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBack.Margin = new System.Windows.Forms.Padding(2);
             this.btnBack.Name = "btnBack";
             this.btnBack.Size = new System.Drawing.Size(99, 34);
             this.btnBack.TabIndex = 42;
@@ -90,7 +90,7 @@ namespace PRG282_Assignment_GUI
             "Database Design",
             "Network Design"});
             this.clbModules.Location = new System.Drawing.Point(480, 161);
-            this.clbModules.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.clbModules.Margin = new System.Windows.Forms.Padding(2);
             this.clbModules.Name = "clbModules";
             this.clbModules.Size = new System.Drawing.Size(137, 88);
             this.clbModules.TabIndex = 60;
@@ -102,7 +102,7 @@ namespace PRG282_Assignment_GUI
             "Male",
             "Female"});
             this.cmbGender.Location = new System.Drawing.Point(480, 68);
-            this.cmbGender.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cmbGender.Margin = new System.Windows.Forms.Padding(2);
             this.cmbGender.Name = "cmbGender";
             this.cmbGender.Size = new System.Drawing.Size(95, 21);
             this.cmbGender.TabIndex = 59;
@@ -134,7 +134,7 @@ namespace PRG282_Assignment_GUI
             // txtAddress
             // 
             this.txtAddress.Location = new System.Drawing.Point(480, 132);
-            this.txtAddress.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtAddress.Margin = new System.Windows.Forms.Padding(2);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(95, 20);
             this.txtAddress.TabIndex = 56;
@@ -154,7 +154,7 @@ namespace PRG282_Assignment_GUI
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(480, 102);
-            this.txtPhone.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtPhone.Margin = new System.Windows.Forms.Padding(2);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.PasswordChar = '*';
             this.txtPhone.Size = new System.Drawing.Size(95, 20);
@@ -187,7 +187,7 @@ namespace PRG282_Assignment_GUI
             // txtDoB
             // 
             this.txtDoB.Location = new System.Drawing.Point(220, 159);
-            this.txtDoB.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtDoB.Margin = new System.Windows.Forms.Padding(2);
             this.txtDoB.Name = "txtDoB";
             this.txtDoB.PasswordChar = '*';
             this.txtDoB.Size = new System.Drawing.Size(95, 20);
@@ -198,7 +198,7 @@ namespace PRG282_Assignment_GUI
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Segoe Print", 12F);
-            this.label5.Location = new System.Drawing.Point(62, 128);
+            this.label5.Location = new System.Drawing.Point(55, 129);
             this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(161, 28);
@@ -208,7 +208,7 @@ namespace PRG282_Assignment_GUI
             // txtSurname
             // 
             this.txtSurname.Location = new System.Drawing.Point(220, 132);
-            this.txtSurname.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtSurname.Margin = new System.Windows.Forms.Padding(2);
             this.txtSurname.Name = "txtSurname";
             this.txtSurname.Size = new System.Drawing.Size(95, 20);
             this.txtSurname.TabIndex = 49;
@@ -227,8 +227,9 @@ namespace PRG282_Assignment_GUI
             // 
             // txtName
             // 
+            this.txtName.Cursor = System.Windows.Forms.Cursors.Default;
             this.txtName.Location = new System.Drawing.Point(220, 102);
-            this.txtName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtName.Margin = new System.Windows.Forms.Padding(2);
             this.txtName.Name = "txtName";
             this.txtName.PasswordChar = '*';
             this.txtName.Size = new System.Drawing.Size(95, 20);
@@ -249,7 +250,7 @@ namespace PRG282_Assignment_GUI
             // txtID
             // 
             this.txtID.Location = new System.Drawing.Point(220, 70);
-            this.txtID.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtID.Margin = new System.Windows.Forms.Padding(2);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(95, 20);
             this.txtID.TabIndex = 45;
@@ -317,9 +318,10 @@ namespace PRG282_Assignment_GUI
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnBack);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmUpdate";
             this.Text = "Update";
+            this.Load += new System.EventHandler(this.frmUpdate_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

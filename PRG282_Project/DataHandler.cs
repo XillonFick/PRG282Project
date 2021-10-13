@@ -167,11 +167,10 @@ namespace PRG282_Project
 
         }
 
-        public void Update(int studID, string name, string surname, string course, DateTime doB, string gender, string phoneNumber, string address)
+        public void Update(int studID, string name, string surname, DateTime doB, string gender, string phoneNumber, string address)
         {
             string iName = "StudentName= StudentName";
             string iSurname = "StudentSurname= StudentSurname";
-            string iCourse = "Course = Course ";
             string iDOB = "DOB = DOB";
             string iGender = "Gender = Gender";
             string iPhone = "Phone = Phone";
@@ -188,11 +187,7 @@ namespace PRG282_Project
             }
             if (string.IsNullOrEmpty(doB.ToString()) == false)
             {
-                iCourse = string.Format("Course = {0}", course);
-            }
-            if (string.IsNullOrEmpty(doB.ToString()) == false)
-            {
-                iDOB = string.Format("DOB = {0}", doB.ToString()) ;
+                iDOB = string.Format("DOB = {0}", doB) ;
             }
             if (string.IsNullOrEmpty(gender.ToString()) == false)
             {
@@ -210,17 +205,16 @@ namespace PRG282_Project
 
             using (connect)
             {
-                SqlCommand cmd = new SqlCommand();
+                SqlCommand cmd = new SqlCommand("spUpdateStudent", connect);
                 cmd.CommandType = CommandType.StoredProcedure;
 
-                cmd.Parameters.AddWithValue("", studID);
-                cmd.Parameters.AddWithValue("", iName);
-                cmd.Parameters.AddWithValue("", iSurname);
-                cmd.Parameters.AddWithValue("", iCourse);
-                cmd.Parameters.AddWithValue("", iDOB);
-                cmd.Parameters.AddWithValue("", iGender);
-                cmd.Parameters.AddWithValue("", iPhone);
-                cmd.Parameters.AddWithValue("", iAdress);
+                cmd.Parameters.AddWithValue("@ID", studID);
+                cmd.Parameters.AddWithValue("@Name", iName);
+                cmd.Parameters.AddWithValue("@Surname", iSurname);
+                cmd.Parameters.AddWithValue("@DOB", iDOB);
+                cmd.Parameters.AddWithValue("@Gender", iGender);
+                cmd.Parameters.AddWithValue("@Phone", iPhone);
+                cmd.Parameters.AddWithValue("@Address", iAdress);
 
                 cmd.ExecuteNonQuery();
             }

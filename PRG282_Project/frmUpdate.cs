@@ -23,9 +23,9 @@ namespace PRG282_Assignment_GUI
             {
                 if (int.TryParse(txtID.Text, out int ID))
                 {
-                    if (DateTime.TryParse(txtDoB.Text, out DateTime date))
+                    if ((DateTime.TryParse(txtDoB.Text, out DateTime date)) || string.IsNullOrEmpty(txtDoB.Text))
                     {
-                        handler.Update(ID, txtName.Text, txtSurname.Text, txtCourse.Text, date, cmbGender.Text, txtPhone.Text, txtAddress.Text);
+                        handler.Update(ID, txtName.Text, txtSurname.Text, date, cmbGender.Text, txtPhone.Text, txtAddress.Text);
                     }
                     else
                     {
@@ -42,13 +42,18 @@ namespace PRG282_Assignment_GUI
 
                 MessageBox.Show("Insert Valid DoB", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-            catch (Exception)
+            catch (Exception er)
             {
 
-                MessageBox.Show("Insert Valid studentNumber", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show(er.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
            
            
+        }
+
+        private void frmUpdate_Load(object sender, EventArgs e)
+        {
+            handler.Connect();
         }
     }
 }
