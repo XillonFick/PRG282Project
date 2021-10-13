@@ -21,7 +21,11 @@ namespace PRG282_Project
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
             Application.Run(new frmUpdate());
+=======
+            Application.Run(new frmCreate());
+>>>>>>> Stashed changes
 =======
             Application.Run(new frmCreate());
 >>>>>>> Stashed changes
