@@ -13,7 +13,7 @@ namespace PRG282_Assignment_GUI
     public partial class frmRead : Form
     {
         DataHandler handler = new DataHandler();
-        BindingSource source = new BindingSource();
+      
         public frmRead()
         {
             InitializeComponent();
@@ -27,31 +27,11 @@ namespace PRG282_Assignment_GUI
         private void frmRead_Load(object sender, EventArgs e)
         {
 
-            source.DataSource = handler.Read();
-            dgvDisplayStudents.DataSource = source;
+           
+            dgvDisplayStudents.DataSource = handler.Read();
 
         }
 
-        private void btnFirst_Click(object sender, EventArgs e)
-        {
-            source.MoveFirst();
-        }
-
-        private void btnPrevious_Click(object sender, EventArgs e)
-        {
-            source.MoveNext();
-        }
-
-        private void btnNext_Click(object sender, EventArgs e)
-        {
-            source.MoveNext();
-
-        }
-
-        private void btnLast_Click(object sender, EventArgs e)
-        {
-            source.MoveLast();
-        }
 
         private void btnBack_Click(object sender, EventArgs e)
         {
